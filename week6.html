@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="week1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true
+            },
+            "HTML-CSS": { scale: 90 },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="week1.js" defer></script>
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="paper" id="paper1">Bruner, 1987</div>
+        <div class="paper" id="paper2">Hamack and Manago, 2024</div>
+        <div class="paper" id="paper3">Riessman, 1989</div>
+        <div class="paper" id="paper4">Smith and Sparks, 2006</div>
+      </div>
+    
+      <div class="content-box" id="contentBox">
+        <div class="content" id="content1">
+            <h2>Critical Analysis of "Life as Narrative" by Jerome Bruner</h2>
+    
+                <p>
+                    Jerome Bruner’s essay, <em>"Life as Narrative"</em>, proposed a profound examination of how individuals construct their identities and interpret their lives through storytelling. He delved deeply into the philosophical, cognitive, and cultural dimensions of autobiographical narratives, positing that narratives were fundamental to how people understood and made sense of their lived experiences. Bruner championed a **constructivist view of narrative**, where the human mind's essential function was "world-making." In Bruner's perspective, the stories individuals told about themselves were not necessarily accurate depictions of events but instead ongoing reinterpretations of those experiences.
+                </p>
+
+                <p>
+                    The essay invited readers to reflect critically on the malleability of memory and how it intertwined with culture and language to produce these self-narratives. Bruner did not shy away from challenging the traditional view that narratives were factual records; instead, he emphasized their constructive nature, suggesting that autobiographies were tools for "life-making." This assertion posed intriguing questions about whether our narratives could ever truly reflect reality or if they were simply ways to cope with the absence of an objective record of our lives.
+                </p>
+
+                <h3>Thought and Narrative</h3>
+
+                <p>
+                    Bruner contrasted logical, reason-driven modes of thought with narrative thinking. Historically, thought had been treated as an instrument of reason, evaluated by its adherence to logic or inductive laws. However, Bruner suggested that narratives represented a different, equally important form of thinking. While logical thought sought precision and computation, narrative thinking embraced the ambiguity and richness of human experience. The idea that narrative was a way of "world-making" rather than a way of reflecting the world was compelling.
+                </p>
+
+                <ul class="styled-list">
+                    <li>This constructivist framework disrupted the notion that one could recount a series of events objectively, prompting readers to reconsider how they interpreted their own stories.</li>
+                    <li>Bruner's distinction raised questions about the nature of truth in self-narratives. If Bruner's constructivist approach was accurate, what role did truth play in life narratives?</li>
+                    <li>Could autobiographies hold some form of "truth" through the narrator's perspective, even if not factually accurate?</li>
+                </ul>
+
+                <h3>Autobiography as Life-Making</h3>
+
+                <p>
+                    The essay extended the idea of narrative to the concept of autobiography. According to Bruner, autobiographies were not factual recollections but rather constructed narratives, and they played a central role in how individuals organized and made sense of their lives. Bruner’s claim that life narratives were continuously evolving interpretations provided a framework for understanding how individuals reinterpreted past events based on new experiences.
+                </p>
+
+                <ul class="styled-list">
+                    <li>This idea resonated in daily life when people reflected on childhood or significant moments and arrived at new insights.</li>
+                    <li>The notion of autobiographies as tools for "life-making" was both revolutionary and complex, as it framed the "self" as a fluid, evolving entity rather than a fixed essence.</li>
+                    <li>While Bruner highlighted the evolving nature of narratives, some critics might argue that this downplays factual accuracy in life stories.</li>
+                </ul>
+
+                <h3>Narrative as the Mode for Describing Time</h3>
+
+                <p>
+                    Another core argument in Bruner’s essay was the notion that humans could only describe lived time through narrative. Despite the availability of other temporal constructs like clock time or cyclical time, Bruner contended that these modes failed to capture the richness of lived experience.
+                </p>
+
+                <ul class="styled-list">
+                    <li>He cited philosopher Paul Ricoeur to support his claim that narrative was the most effective tool for understanding lived time.</li>
+                    <li>However, this raised concerns about how narratives could manipulate or distort memories.</li>
+                </ul>
+
+                <h3>The Mimetic Relationship Between Life and Narrative</h3>
+
+                <p>
+                    Bruner’s claim that the relationship between life and narrative was mimetic in both directions represented one of the more philosophically dense parts of the essay. He drew upon Aristotle’s idea that art imitates life but extended it to suggest that life also imitated art. This two-way relationship implied that the narratives individuals constructed about their lives were not merely reflections of lived events but influenced how those events were experienced.
+                </p>
+
+                <ul class="styled-list">
+                    <li>If life imitated narrative, the types of stories available in a culture could shape how individuals experienced their own lives.</li>
+                    <li>This concept explained why some life narratives, such as the hero's journey, were recurring motifs across cultures.</li>
+                    <li>Bruner raised, but left unresolved, the tension between individuality and culturally available narrative models.</li>
+                </ul>
+
+                <h3>Cultural Influence on Life Narratives</h3>
+
+                <p>
+                    One of Bruner’s most provocative assertions was that cultural, interpersonal, and linguistic influences profoundly shaped autobiographical narratives. He argued that the stories people told about their lives were deeply embedded in the cultural models available to them. This raised interesting questions about the nature of free will and agency.
+                </p>
+
+                <ul class="styled-list">
+                    <li>To what extent were individuals free to construct their own narratives, and how much of their story was predetermined by the culture they inhabited?</li>
+                    <li>Critics might argue that Bruner underestimates human agency by overstating cultural influence, as individuals can resist cultural scripts.</li>
+                </ul>
+
+                <h3>How Narratives Shape Experience</h3>
+
+                <p>
+                    Bruner contended that narratives did more than help individuals interpret past experiences; they actively shaped the present and future. The act of storytelling was not merely reflective but constitutive of reality.
+                </p>
+
+                <ul class="styled-list">
+                    <li>By changing the stories people told about themselves, they could reshape their lives, a principle used in narrative therapy.</li>
+                    <li>This implied a degree of instability in the self, as malleable narratives might disorient individuals.</li>
+                </ul>
+
+                <h3>The Form of Self-Narrative</h3>
+
+                <p>
+                    Bruner introduced the concepts of **fabula** (universal theme), **sjuzet** (plot or discourse), and **forma** (genre or style) to analyze self-narratives. The structure of a life story was divided into timeless themes, specific events, and genre.
+                </p>
+
+                <ul class="styled-list">
+                    <li>This formal analysis provided a structured approach to understanding life narratives.</li>
+                    <li>However, Bruner’s reliance on literary theory risked oversimplifying the complexity of real-life narratives, which may not fit neatly into genres or follow coherent plots.</li>
+                </ul>
+        </div>
+        <div class="content" id="content2">
+            <h2>The Psychology of Sexual and Gender Diversity in the 21st Century</h2>
+            <p>
+                In this article, Phillip L. Hammack and Adriana M. Manago explore the shifts in cultural and scientific understandings of sexual and gender diversity in the United States during the 21st century. The authors focus on how new social technologies have impacted these shifts and the concept of authenticity as a cultural narrative that centers on alignment between inner experiences of gender and sexuality and outward expression.
+            </p>
+        
+            <h3>Social Technologies and Authenticity</h3>
+            <p>
+                Social technologies, such as social media, have radically altered how individuals engage with and construct personal narratives, providing unprecedented opportunities to express authenticity in gender and sexuality. Authenticity, in this context, is the feeling of alignment between one's internal self and external presentation, emphasizing a sense of self-authorship.
+            </p>
+            <ul class="styled-list">
+                <li>Social media has allowed individuals to bypass traditional gatekeepers of information like legacy media institutions, creating space for new narratives of gender and sexuality to emerge.</li>
+                <li>Platforms like MySpace, Facebook, Twitter, Instagram, and TikTok have facilitated different modes of expressing authenticity, from real names and personal profiles to “unfiltered” and creative video content.</li>
+            </ul>
+        
+            <h3>Five Narratives Supporting Sexual and Gender Diversity</h3>
+            <p>
+                Hammack and Manago identify five key narratives that circulate in the 21st century regarding sexuality and gender, four of which support diversity and one that is reactionary.
+            </p>
+            
+            <h3>1. Gender as Self-Constructed</h3>
+            <p>
+                The narrative that gender is self-constructed reflects the 21st-century shift away from binary, biological gender definitions towards a more fluid understanding of gender identity and expression.
+            </p>
+            <ul class="styled-list">
+                <li>It is now common to distinguish between assigned sex at birth, gender identity, and gender presentation.</li>
+                <li>Technologies like social media provide platforms for individuals to learn and co-construct new terminologies, such as nonbinary and genderqueer identities.</li>
+            </ul>
+        
+            <h3>2. Sexuality as Plural, Playful, Flexible, and Fluid</h3>
+            <p>
+                The narrative of sexuality as plural and fluid challenges earlier binary conceptions of sexual attraction, emphasizing the flexibility and fluidity of sexual identities across time.
+            </p>
+            <ul class="styled-list">
+                <li>Terms like “bisexual” and “pansexual” have gained prominence, signifying attraction to multiple genders and suspicion of binary categories.</li>
+                <li>Platforms such as Tumblr have fostered queer community-building, helping bisexual and pansexual individuals challenge traditional conceptions of sexuality.</li>
+            </ul>
+        
+            <h3>3. Sexuality and Monogamy as Cultural Compulsions</h3>
+            <p>
+                This narrative questions the assumption that sexual desire is inherent or universal and challenges the ideal of monogamy.
+            </p>
+            <ul class="styled-list">
+                <li>Asexuality, including demisexuality and graysexuality, has become recognized as part of sexual diversity, thanks to resources like the Asexual Visibility and Education Network (AVEN).</li>
+                <li>Consensual nonmonogamy and polyamory have gained visibility, with social technologies like dating apps facilitating connections for nonmonogamous individuals.</li>
+            </ul>
+        
+            <h3>4. Intersectionality as Central to Gender and Sexuality</h3>
+            <p>
+                Intersectionality highlights how various identities—such as race, class, gender, and sexuality—interact and influence individual experiences.
+            </p>
+            <ul class="styled-list">
+                <li>Queer counterpublics, like those on Tumblr, allow LGBTQ+ individuals to co-construct narratives of gender and sexuality that resist dominant, normative frameworks.</li>
+                <li>Intersectionality helps bring attention to underrepresented and marginalized voices in social movements, such as the #SayHerName campaign, which focuses on violence against Black cisgender and transgender women.</li>
+            </ul>
+        
+            <h3>5. Resurgent Cisheteropatriarchal Masculinity</h3>
+            <p>
+                The fifth narrative represents a reactionary story, resisting the acceptance of sexual and gender diversity and seeking to restore hierarchical structures based on cisgender and heterosexual norms.
+            </p>
+            <ul class="styled-list">
+                <li>This narrative promotes patriarchal masculinity, evident in online communities like the “manosphere,” which fosters misogynistic and homophobic rhetoric.</li>
+                <li>Figures like Andrew Tate and groups like the Proud Boys represent these reactionary ideologies, challenging progressive values of gender equality.</li>
+            </ul>
+        
+            <h3>Principles for the Future of Psychological Science</h3>
+            <p>
+                Hammack and Manago propose five principles for psychological research and clinical practice to address these emerging narratives and to better support individuals navigating gender and sexual diversity in the 21st century.
+            </p>
+        
+            <h3>1. Ground Research in Lived Experience</h3>
+            <p>
+                Researchers should focus on lived experiences rather than traditional categorical identities when studying gender and sexuality. Methods such as ethnography, grounded theory, and narrative analysis can provide deeper insight into individual experiences.
+            </p>
+        
+            <h3>2. Challenge Normative Thinking</h3>
+            <p>
+                Researchers and practitioners should challenge normative thinking about gender and sexuality by recognizing the diversity of human experiences across cultures and embracing new forms of expression.
+            </p>
+        
+            <h3>3. Practice Affirmation, Not Suspicion</h3>
+            <p>
+                The authors encourage affirmation of individuals' self-narratives of gender and sexuality, cautioning against a paternalistic or suspicious approach that may invalidate or undermine personal experiences.
+            </p>
+        
+            <h3>4. Focus on Diversity, Not Discrete Identity Categories</h3>
+            <p>
+                Instead of focusing on discrete categories like “LGBTQ+,” researchers should center their work on the broader phenomenon of gender and sexual diversity, recognizing that experiences vary widely across the spectrum of identities.
+            </p>
+        
+            <h3>5. Embrace Fluid and Nonlinear Narratives of Social Change</h3>
+            <p>
+                Recognize that social change is not linear and that progress and backlash may coexist. Acknowledge the fluidity of these processes and remain committed to fostering inclusivity and diversity.
+            </p>
+        </div>
+        <div class="content" id="content3">
+            <h2>Life Events, Meaning, and Narrative</h2>
+            <p>
+                Catherine Kohler Riessman explores how individuals ascribe meaning to stressful life events, particularly divorce caused by marital infidelity. She emphasizes that the subjective meaning people attach to life events profoundly impacts their psychological outcomes and stresses the need for a narrative approach to understanding these experiences.
+            </p>
+        
+            <h3>The Problem of Meaning in Stress Research</h3>
+            <p>
+                Traditional stress research often treats life events like divorce or infidelity as objective occurrences, overlooking the subjective interpretations that individuals give to these experiences. Riessman highlights the need to understand the personal meanings individuals create, arguing that these meanings can differ significantly even when the same event occurs.
+            </p>
+            <ul class="styled-list">
+                <li>Researchers often impose their definitions of meaning on subjects, ignoring how people themselves construct the meaning of their experiences.</li>
+                <li>Narrative approaches allow individuals to recount their life events in their own words, revealing the complexity of meaning-making processes.</li>
+            </ul>
+        
+            <h3>Narrative and Meaning-Making</h3>
+            <p>
+                Riessman explains that people construct the meaning of their experiences through narratives, which have a recognizable structure with a beginning, middle, and end. This structure helps people organize and interpret their lives.
+            </p>
+            <ul class="styled-list">
+                <li>In a narrative, events are not just described; they are given meaning through the narrator’s choices and interpretations.</li>
+                <li>By analyzing the structure and content of personal stories, researchers can understand how individuals make sense of stressful events.</li>
+            </ul>
+        
+            <h3>Case Studies of Marital Infidelity and Divorce</h3>
+            <p>
+                Riessman presents three case studies of individuals who experienced marital infidelity and divorce. Although all three faced similar events, they constructed vastly different narratives and meanings from their experiences.
+            </p>
+            
+            <h3>1. Gloria: Infidelity as Betrayal</h3>
+            <p>
+                Gloria, a 39-year-old woman, experienced her husband's infidelity as a profound betrayal. Her narrative centers on her suspicions, the eventual confirmation of her husband's affairs, and the emotional turmoil she endured. The story structure emphasizes her growing realization and the decision to divorce as a resolution.
+            </p>
+            <ul class="styled-list">
+                <li>Gloria’s narrative is filled with emotion, and she describes feeling betrayed and devastated by her husband's repeated affairs.</li>
+                <li>She constructs a vivid narrative where her suspicions were confirmed, leading to a final decision to leave the marriage.</li>
+            </ul>
+        
+            <h3>2. Burt: Infidelity in the Context of Illness</h3>
+            <p>
+                Burt, a 43-year-old man with multiple sclerosis, recounts his wife’s infidelity differently. He does not focus on the affair itself but rather on his illness as the main cause of their separation. Burt's narrative reveals empathy toward his wife, viewing her infidelity as a consequence of the strain his illness placed on their relationship.
+            </p>
+            <ul class="styled-list">
+                <li>Burt emphasizes his declining health and how it impacted his wife, rather than focusing on her affair as a betrayal.</li>
+                <li>His narrative highlights the challenges of living with a chronic illness and the emotional toll it took on both of them.</li>
+            </ul>
+        
+            <h3>3. Al: Infidelity as a Context for Violence</h3>
+            <p>
+                Al, a 35-year-old man, tells a story where his wife's infidelity triggers his own violent response. Unlike Gloria and Burt, Al’s narrative focuses on his reaction to his wife’s affair, particularly an incident where he became physically violent. His narrative reflects his struggle with anger and the eventual decision to separate.
+            </p>
+            <ul class="styled-list">
+                <li>Al's narrative is centered around his internal conflict and emotional distress, rather than the affair itself.</li>
+                <li>He constructs the story around his feelings of anger and loss of control, which ultimately led to the end of the marriage.</li>
+            </ul>
+        
+            <h3>Implications for Stress Research</h3>
+            <p>
+                Riessman argues that the subjective meanings people attach to stressful events are critical to understanding their psychological outcomes. Researchers should focus on personal narratives to better understand how people make sense of their experiences.
+            </p>
+            <ul class="styled-list">
+                <li>Stress researchers need to move beyond objective measures of life events and consider the meanings individuals ascribe to those events.</li>
+                <li>Narrative analysis provides a valuable tool for uncovering the complexity of meaning-making and its impact on health and well-being.</li>
+            </ul>        
+        </div>
+        <div class="content" id="content4">
+            <h2>Narrative Inquiry in Psychology: Exploring the Tensions</h2>
+            <p>
+                Brett Smith and Andrew C. Sparkes explore the rising interest in narrative inquiry within psychology, focusing on the theoretical tensions that shape this field. The authors organize the discussion around three themes: ‘narrative and the self’, ‘ontology or nature of narrative’, and ‘approaches to narrative research’. By analyzing these tensions, the authors aim to clarify the complexities of narrative inquiry and foster dialogue within the academic community.
+            </p>
+
+            <h3>Theme 1: Narrative and the Self</h3>
+            <p>
+                The first theme examines tensions surrounding the relationship between narrative and self, including the unity and coherence of self. Researchers in narrative psychology differ on whether narrative and identity are inseparable or whether they represent separate constructs.
+            </p>
+            <ul class="styled-list">
+                <li>Some scholars, like Sacks (1985) and Lieblich et al. (1998), argue that narratives are our identities, intertwining the two concepts.</li>
+                <li>Others, such as Freeman (2003), caution against reducing identity to narrative, emphasizing that identities are multifaceted and cannot be fully captured by stories alone.</li>
+            </ul>
+
+            <h3>Theme 2: Ontology or Nature of Narrative</h3>
+            <p>
+                This theme explores the ontological tensions between realism and relativism in narrative inquiry, as well as the emphasis on internal versus social dimensions of selfhood. 
+            </p>
+            <ul class="styled-list">
+                <li>Researchers like McAdams (1993) lean towards a realist perspective, suggesting that there is a core story within individuals waiting to be uncovered.</li>
+                <li>In contrast, scholars like Gergen (1999) promote a relational, socially constructed view of identity, where stories emerge through interactions with others.</li>
+            </ul>
+
+            <h3>Theme 3: Approaches to Narrative Research</h3>
+            <p>
+                The final theme addresses methodological tensions in narrative inquiry, particularly the distinction between analyzing what stories say (content) and how stories are constructed (form). It also covers the debate between "story analysts" and "storytellers".
+            </p>
+            <ul class="styled-list">
+                <li>Story analysts focus on systematic analysis of narrative content, using methods like grounded theory or thematic analysis to identify common patterns across stories.</li>
+                <li>Storytellers, on the other hand, engage with narratives by thinking with stories, emphasizing their emotional and relational dimensions, and presenting them as holistic accounts.</li>
+            </ul>
+        </div>
+        
+      </div>
+      
+</body>
+</html>

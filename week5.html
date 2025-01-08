@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="week1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true
+            },
+            "HTML-CSS": { scale: 90 },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="week1.js" defer></script>
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="paper" id="paper1">Adrian Coyle’s - Discourse Analysis</div>
+        <div class="paper" id="paper2">Martinussen et al., 2020</div>
+        <div class="paper" id="paper3">Wetherell Edley, 2014</div>
+      </div>
+    
+      <div class="content-box" id="contentBox">
+        <div class="content" id="content1">
+            <h2>Discourse Analysis</h2>
+
+            <h3>Discourse Strategies</h3>
+            <ul class="styled-list">
+                <li><strong>Justification</strong>: Speakers use language to justify their actions or beliefs, making them appear reasonable or acceptable. For example, a participant might justify support for genetic technologies by highlighting the prevention of genetic diseases.</li>
+              
+                <li><strong>Positioning</strong>: This strategy involves placing oneself or others in relation to specific roles or viewpoints. A person may position themselves as a concerned citizen to frame a critique in terms of public well-being.</li>
+              
+                <li><strong>Distancing</strong>: Speakers may separate themselves from a particular group or belief to avoid association. For instance, "I don’t agree with everything the environmentalists say, but we should still protect resources."</li>
+              
+                <li><strong>Hedging</strong>: Using cautious or ambiguous language to soften statements, like saying, "It’s possible some misuse the technology, but I’m not sure," to avoid taking a firm stance.</li>
+              
+                <li><strong>Mitigation</strong>: Softening a statement to make it less forceful, such as, "I understand your point, but we need to look at the broader picture," to gently challenge a view.</li>
+              
+                <li><strong>Polarization</strong>: Presenting two opposing sides to reinforce one’s own position by contrasting it with an extreme view. For example, framing a view as "reasonable" by comparing it to an "extreme" alternative.</li>
+              
+                <li><strong>Appealing to Common Sense or Norms</strong>: Justifying opinions by appealing to widely accepted norms or "common sense." For example, "It’s only natural for parents to want the best for their children" in a debate on ethics.</li>
+              
+                <li><strong>Moralizing</strong>: Using moral language to frame an argument, making a point seem ethical or righteous. For instance, "It’s our moral duty to save lives" when discussing the ethics of savior siblings.</li>
+              </ul>
+              
+
+            <h3>Diversity of Approaches</h3>
+            <p>Discourse analysis developed in British psychology during the late 1980s. It became influential in areas like health psychology, counselling, and developmental psychology. Different approaches led to diverse interpretations, making it difficult to provide a unified understanding of the method.</p>
+
+            <h3>Core Assumptions</h3>
+            <p>In discourse analysis, language wasn’t viewed as reflecting reality but as <strong>constructing</strong> it.  This means the way we talk about things shapes how we see and understand them. For example, terms like "gay" and "lesbian" weren’t always used—they became part of how we think about sexuality in the 18th and 19th centuries. This shows how language influences our understanding of social concepts over time. So, language doesn’t just label things; it shapes how we view the world.</p>
+
+            <h3>Social Constructionism</h3>
+            <p>Discourse analysis was rooted in <strong>social constructionism</strong>, challenging the idea that language corresponded to "real" entities. Language instead constructed categories through cultural and historical interactions,  Instead, language creates categories and meanings through cultural and historical influences. For example, certain medical terms that we use today, like "mental illness" or "disorder," developed over time through society’s discussions and understandings.</p>
+
+            <h3>Discourses as Systems</h3>
+            <p>Discourses were described as systems/groups of statements that constructed objects and social realities. For instance, “designer babies” in genetic technologies constructed varying understandings of procedures like PGD (in vitro fertilization). It influences whether they see these procedures as a way to help with medical conditions or as something controversial for picking traits in babies.</p>
+
+            <h3>Language as Social Action</h3>
+            <p>Discourse analysis focused on how people used language to construct their realities and perform social actions, such as justifying or questioning. For example, focus groups discussing PGD expressed concerns about “designer babies” and savior siblings. Designer babies refer to the idea of using genetic technologies to select or enhance traits in babies, such as appearance or intelligence. In discussions, people might use language to justify this practice, suggesting it could lead to healthier children, or to question it, fearing it could create a society where only genetically modified traits are valued. Savior siblings are children conceived to be a genetic match for an existing sick sibling, so their cells or tissues can help save their sibling's life. In these discussions, participants may raise moral or ethical concerns, such as how the child might feel about being born for this specific purpose.</p>
+
+            <h3>Discursive Psychology vs. Foucauldian Discourse Analysis</h3>
+            <ul class="styled-list">
+                <li><strong>Discursive Psychology</strong>:  looks at how people use language in everyday interactions to shape actions, such as making their statements sound factual or objective, while still acknowledging the real world. It’s more focused on how individuals use language in social situations.</li>
+                <li><strong>Foucauldian Discourse Analysis</strong>: emphasizes how language creates and maintains power relations in society. It explores how certain ways of speaking (like the medical approach to illness) become dominant, shaping how we think and behave on a broader, more societal level.</li>
+            </ul>
+            <p>In short, Discursive Psychology focuses on individual language use, while Foucauldian Discourse Analysis focuses on how language maintains power and control in society.</p>
+
+            <h3>Research Questions in Discourse Analysis</h3>
+            <p>Discourse analysis addressed how language constructed ideologies and social realities. Research questions examined topics like exploitation, prejudice, and social practices. For example, researchers explored how fox hunting was constructed in pro-hunting articles or how mental health professionals constructed paranoia.  In pro-hunting discourse, hunting might be described as a tradition, a necessary practice for controlling animal populations, or as a sport, framing it in a positive light. By constructing it this way, the language justifies and normalizes the activity, even in the face of criticism from animal rights groups.</p>
+
+            <h3>Sampling and Data</h3>
+            <p>Data for discourse analysis came from spoken or written texts such as interviews and focus groups. Large representative samples weren’t necessary as the focus was on common discursive patterns. In Coyle’s study on PGD, focus groups were used to explore moral concerns about new genetic technologies.</p>
+
+            <h3>Techniques</h3>
+            <p>
+                Discourse analysis focuses on closely reading and interpreting how people use language. Researchers like Potter and Wetherell encouraged coding data, which means categorizing different parts of the conversation or text to find recurring themes or patterns.
+                
+                For example, in a discussion about Preimplantation Genetic Diagnosis (PGD), a participant named Gabi initially supported genetic technologies. However, as the conversation progressed, she began to express concerns about the ethics of "designer babies," where genetic modification might be used to select specific traits in a child. This change in Gabi’s stance is a key shift in how she talks about the issue, showing how her views evolved during the discussion. Discourse analysis captures these kinds of shifts to understand how people's perspectives can change based on the language they use or hear.</p>
+
+            <h3>Function and Variability</h3>
+            <p>In discourse analysis, the focus is not just on what people say but on why they say it and the purpose their language serves. This is referred to as the function of language. For instance, people use language to justify, challenge, or reinforce different views or social realities. By looking at these functions, discourse analysis helps to understand how individuals either support or question commonly accepted ideas. Variability refers to how the same person or group can use language in different ways, depending on the situation. In the PGD (Preimplantation Genetic Diagnosis) study, participants like Archie and Connor showed variability in how they discussed savior siblings (children conceived to help treat an existing sick sibling). This balancing act, where participants navigate both the positive and negative aspects of a complex issue, shows how language serves multiple functions, such as legitimizing one view while also acknowledging potential concerns. </p>
+
+            <h3>Critical and Applied Discourse Analysis</h3>
+            <p>Discourse analysis offered potential for practical interventions in areas like public health, sex education, and mental health. Coyle’s study on genetic technologies demonstrated how the public constructed ethical boundaries, showing the social implications of these constructions.  For example, debates around "designer babies" and savior siblings contribute to how the public views the ethical acceptability of medical practices, potentially influencing policy changes and healthcare approaches. These discussions also shape cultural perceptions, affecting how certain medical practices and family dynamics are understood and accepted within society.</p>
+
+            <h3>Evaluation and Reflexivity</h3>
+            <p>Discourse analysis required reflexivity from the researcher, recognizing their influence on the analysis. Criteria like <strong>sensitivity to context</strong> and <strong>coherence</strong> were used to evaluate discourse analytic work, as traditional measures like reliability and validity didn’t apply.</p>
+            <ul class="styled-list">
+                <li>Sensitivity to context refers to the analyst's ability to recognize and interpret the social, cultural, and historical factors influencing the discourse. This means paying attention to how language is used in specific situations, taking into account the participants' backgrounds, the setting, and the broader societal influences. For instance, understanding how the context of a focus group discussing genetic technologies, like PGD, shapes the way participants talk about ethical concerns is crucial for a valid interpretation.</li>
+                <li>Coherence involves the logical consistency of the analysis. This criterion ensures that the discourse analysis presents a clear and organized interpretation that ties together the different elements of the discourse. The analysis should build a well-supported narrative that reflects the data, ensuring that the conclusions drawn align with the patterns observed in the discourse. For example, if participants shift their stance on "designer babies," the analysis should coherently explain this shift by linking it to discursive strategies and the contextual elements influencing the conversation.</li>
+            </ul>
+         
+        </div>
+        
+        <div class="content" id="content2">
+            <h2>Just Being and Being Bad: Female Friendship as a Refuge in Neoliberal Times</h2>
+
+            <h3>Introduction</h3>
+            <p>This study examined how women’s friendships in Aotearoa New Zealand functioned as a refuge from the neoliberal demands of self-improvement and relentless productivity. The researchers, through interviews and group discussions, highlighted how these friendships provided space for women to resist neoliberal pressures. Instead of serving as tools for enhancing the neoliberal self, these friendships offered a reprieve, allowing women to engage in relaxed, non-productive activities. Friendship, in this context, became a site of ease and escape from societal expectations.</p>
+            
+            <h3>Friendship as an Escape from Productivity</h3>
+            <p>One prominent theme revealed that women viewed their friendships as escapes from the pressures of constant productivity. Max (28) vividly recalled her “pie days” with her flatmate, where they would stay home, eat pies, and “Facebook stalk all day.” She admitted that these lazy, unstructured moments provided immense relief from daily obligations. For Max, these impromptu days represented a kind of carefree intimacy reminiscent of the friendships she once had, but now, they acted as moments of rebellion against the neoliberal push to be always productive. Max expressed concern that once she stopped living with her flatmate, these spontaneous moments might vanish, underscoring how much she valued these leisurely escapes.</p>
+            
+            <h3>Relief from the Pressure to Be "Nice"</h3>
+            <p>The study also uncovered how women used their friendships as spaces where they didn’t have to perform constant niceness, a pressure often ingrained in neoliberal culture. Teresa (38) recounted a birthday celebration where, despite missing the usual “dramatics” of a friend’s emotional breakdown, she and her group of friends still found humor in discussing how to “cull” the boring people at the party. She shared that one friend, Tilly, bluntly remarked, “We need to cull people. They were boring,” to which Teresa responded, “You cannot cull people because they are boring. They are just really nice people.” This interaction illustrated how her friends enjoyed subverting the expectation of always being empathetic and nurturing, instead embracing a more irreverent approach to their social interactions.</p>
+            
+            <h3>Cynicism and Subversive Humor</h3>
+            <p>Dianne (29) described how her friendship with Sasha helped her cope with difficult personal circumstances, including caring for a mentally unwell relative and experiencing a miscarriage. Instead of receiving traditional emotional support, Dianne found solace in their shared cynicism and dark humor. She recalled how, after crying in front of a doctor during a follow-up visit, she later met with Sasha and they “just laughed about it.” Dianne emphasized how Sasha allowed her to express her frustrations and cruelty without judgment, creating a safe space where she didn’t have to conform to societal expectations of being nurturing or “a good person.” Their laughter, even about distressing events, subverted the typical norms of female friendship as always emotionally supportive, instead embracing a more complex, layered intimacy.</p>
+            
+            <h3>Comfort and Ease in Deep Friendships</h3>
+            <p>The study also explored how some women’s friendships provided a sense of emotional stability without requiring constant maintenance. Naomi (44) compared her long-standing friendships with schoolmates to “comfy slippers” that “just always [were] there,” offering comfort and reassurance without effort. Similarly, Kristen (39) discussed how her closest friends accepted her “at [her] best and worst,” emphasizing that they didn’t need to work on these friendships—they just “fit.” Kristen likened these friendships to being “part of the furniture,” signifying how natural and integral they had become to her life. These relationships resisted the neoliberal narrative that intimacy required continuous emotional labor, instead presenting a kind of low-maintenance, enduring connection that provided emotional security.</p>
+            
+            <h3>Friendship as Resistance to Neoliberal Pressures</h3>
+            <p>Overall, the study demonstrated that female friendships in Aotearoa New Zealand acted as a site of resistance to neoliberal pressures of self-regulation, emotional labor, and productivity. Elaine (44) described how her friendships offered her a space where she didn’t have to “filter [herself] through a male gaze,” and could simply “be raw.” She relished the freedom to make “crude comments” and joke about things that would typically be deemed inappropriate in more formal social contexts. Elaine noted how, in contrast to the expectations of women to be polite, presentable, and always striving for self-improvement, these friendships allowed her to indulge in a more authentic, rebellious version of herself, free from societal judgment.</p>
+            <ul class="styled-list">
+                <li><strong>Escape from Neoliberal Productivity:</strong>  
+                    - Max (28) described how “pie days” with her flatmate offered a lazy escape from work obligations. These moments, characterized by staying at home, eating pies, and browsing Facebook all day, provided a relief from the relentless pressure to be productive.  
+                    - Max’s reflection on how these spontaneous days might disappear after moving out highlights how fleeting these reprieves from productivity can be in a world that prioritizes constant self-management.
+                </li>
+            
+                <li><strong>Friendships as Reprieve from “Niceness”:</strong>  
+                    - Teresa (38) shared a candid conversation from a birthday party, where she and her friends humorously discussed “culling” boring people from their group. This moment subverted the expectation that women must always be empathetic and nurturing, embracing irreverence instead.  
+                    - This theme of rejecting the societal requirement to be constantly kind and agreeable appeared in multiple narratives, with participants describing moments where they could let go of these pressures with close friends.
+                </li>
+            
+                <li><strong>Cynical Humor as Emotional Support:</strong>  
+                    - Dianne (29) found solace in her friend Sasha’s cynical sense of humor during challenging personal experiences, such as dealing with a mentally unwell relative and suffering a miscarriage.  
+                    - Unlike typical forms of emotional support, their friendship thrived on laughing about difficult moments, such as when Dianne broke down in front of a doctor. This dark humor acted as a subversive form of therapy, allowing Dianne to express frustration without judgment.
+                </li>
+            
+                <li><strong>Friendship as a Space for Authenticity:</strong>  
+                    - Elaine (44) described how her friendships allowed her to “be raw” and not filter herself through the expectations of being “ladylike” or performing for the male gaze.  
+                    - She relished making crude comments and jokes, particularly about topics like underwear mishaps and fart jokes, that would typically be deemed inappropriate. Elaine’s friendships offered a rare space for rejecting societal norms of decorum and self-censorship.
+                </li>
+            
+                <li><strong>Enduring, Low-Maintenance Friendships:</strong>  
+                    - Naomi (44) compared her oldest friendships to “comfy slippers,” emphasizing their permanence and ease. These long-standing relationships, formed during her school days, provided emotional security without the need for constant work.  
+                    - Similarly, Kristen (39) shared that her closest friends accepted her “at [her] best and worst,” likening them to “part of the furniture” in her life. These friendships were valued for their deep familiarity and comfort.
+                </li>
+            
+                <li><strong>Friendship as a Contrast to Heteronormative Roles:</strong>  
+                    - Cathy (44) discussed how her regular “Project Runway” nights with a friend served as a vital escape from the responsibilities of motherhood and the challenges of her relationship.  
+                    - This friendship allowed Cathy to reclaim time for herself and enjoy simple pleasures like watching TV and eating chocolate, while offering emotional support during difficult periods in her marriage.
+                </li>
+            
+                <li><strong>Refusing the Pressure to Be Perfect:</strong>  
+                    - Across the interviews and group discussions, women described their friendships as a space where they didn’t have to perform or strive for perfection. Unlike other areas of their lives, such as work, family, or romantic relationships, their friendships offered a sense of ease and belonging without the expectation to be productive or “good.”
+                </li>
+            
+                <li><strong>Shared Understanding and “Just Fitting In”:</strong>  
+                    - Kristen (39) emphasized that her closest friends saw her at her best and worst, and still loved her. These friendships, characterized by “just fitting,” didn’t require emotional labor or constant communication to thrive.  
+                    - This deep connection, described as “part of the furniture,” created a sense of stability and ease, resisting the neoliberal idea that relationships must be continuously worked on or optimized.
+                </li>
+            
+                <li><strong>Escape from Neoliberal Self-Regulation:</strong>  
+                    - Women in the study often viewed their friendships as moments of escape from the demands of self-regulation, productivity, and neoliberal subjectivity. Their friendships allowed them to temporarily step out of the roles society expected of them, particularly in the realms of self-management, emotional labor, and achieving work-life balance.
+                </li>
+            </ul>
+            <p>The researchers concluded that while these friendships didn’t completely escape the influence of neoliberalism, they provided women with moments of reprieve and resistance. Through shared escapes, humor, and comfort, these friendships created a counter-narrative where women could temporarily shed the pressures of self-perfection and simply enjoy being themselves. The intimate bonds formed through these friendships offered women a unique space where they could reject the ideals of constant self-improvement and productivity that permeated other areas of their lives.</p>            
+        </div>
+        
+        <div class="content" id="content3">
+            <h2>A Discursive Psychological Framework for Analyzing Men and Masculinities</h2>
+
+            <h3>Introduction</h3>
+            <p>The article outlines and advocates for a discursive psychological (DP) framework for studying men and masculinities. 
+            This approach treats language as a central topic, focusing on how people construct gender identities, emotions, and social roles through everyday discourse. 
+            It emphasizes that masculinity is not a fixed trait but something that is continually constructed and negotiated in various social contexts.</p>
+            
+            <h3>Core Elements of the DP Framework</h3>
+            <ul class="styled-list">
+              <li><strong>Language as Constructive:</strong> 
+                - DP views language not just as a reflection of reality, but as actively shaping and constructing social realities, including gender identities. 
+                - The way individuals talk about masculinity helps shape what masculinity means in different contexts.</li>
+            
+              <li><strong>Context-Dependent Masculinities:</strong> 
+                - Masculinity is not treated as a single, stable trait. Instead, it is fluid and performed differently in various social settings, depending on cultural, situational, and interpersonal factors.</li>
+            
+              <li><strong>Discursive Practices:</strong> 
+                - DP focuses on how individuals use discourse to construct and negotiate their identities in everyday interactions. 
+                - Masculinities are seen as dynamic practices that are contextually dependent and always evolving.</li>
+            
+              <li><strong>Subjectivity and Agency:</strong> 
+                - DP argues that individuals have agency in how they construct their gender identities. 
+                - Rather than passively accepting gender norms, men actively engage in the process of shaping and reshaping what it means to be masculine.</li>
+            
+              <li><strong>Power and Hegemony:</strong> 
+                - The framework considers how hegemonic forms of masculinity dominate and suppress alternative masculinities. 
+                - Hegemonic masculinity refers to the culturally dominant ideal of masculinity, which often emphasizes toughness, dominance, and emotional restraint.</li>
+            
+              <li><strong>Variability in Masculinity:</strong> 
+                - DP emphasizes the variability and flexibility of masculinities. 
+                - Different forms of masculinity may coexist, and individuals may shift between different versions of masculinity depending on the situation.</li>
+            </ul>
+            
+            <h3>Hegemonic Masculinity and Contrasting Groups</h3>
+            <ul class="styled-list">
+              <li><strong>Hegemonic Masculinity:</strong> 
+                - Refers to the dominant cultural form of masculinity that privileges traits such as strength, authority, and emotional control. 
+                - In the study by Wetherell and Edley, the "rugby group" at a UK school represented hegemonic masculinity, showcasing behaviors like physical dominance and toughness.</li>
+            
+              <li><strong>Contrasting Groups:</strong> 
+                - Boys who were not part of the rugby group rejected hegemonic masculinity by constructing alternative masculine identities. 
+                - For instance, Aaron, a participant, described the rugby group as "chauvinistic and male," showing how he distanced himself from traditional masculine ideals.</li>
+            </ul>
+            
+            <h3>Discursive Variability in Masculinity</h3>
+            <ul class="styled-list">
+              <li><strong>Fluid Masculinity:</strong> 
+                - DP highlights the fluidity of masculinity, demonstrating that it is not a static trait but something that men construct differently in various contexts.</li>
+            
+              <li><strong>Example of Neil:</strong> 
+                - Neil, one of the study participants, oscillated between identifying as a "wimp" and reasserting his mental strength. 
+                - This illustrates how men negotiate and resist certain masculine norms while still being influenced by dominant ideals.</li>
+            </ul>
+            
+            <h3>Comparison of DP and Gender Role Strain Paradigm (GRSP)</h3>
+            <ul class="styled-list">
+              <li><strong>GRSP Focus:</strong> 
+                - The GRSP emphasizes how men internalize societal gender roles and experience psychological strain when they fail to conform. 
+                - It often relies on psychometric tools to measure adherence to traditional masculine norms.</li>
+            
+              <li><strong>Key Differences with DP:</strong> 
+                - DP critiques GRSP for oversimplifying masculinity by treating it as a fixed set of roles and ignoring the variability and fluidity of how men perform gender. 
+                - Unlike GRSP, DP focuses on the dynamic and context-specific nature of masculinity, showing how it is constructed through everyday interactions.</li>
+            </ul>
+            
+            <h3>The Social Actor in DP</h3>
+            <ul class="styled-list">
+              <li><strong>Active Participation:</strong> 
+                - DP views individuals as active agents who construct their gender identities through language and social interactions. 
+                - Rather than passively internalizing societal gender roles, men actively engage in negotiating and shaping their masculinities.</li>
+            
+              <li><strong>Example of Michael:</strong> 
+                - Michael, a participant, demonstrated how masculinity can be performed in specific situations, such as when he felt masculine while boxing or giving presentations. 
+                - This shows how masculinity is something that individuals enact in different contexts, rather than a stable, inherent trait.</li>
+            </ul>
+            
+            <h3>Conclusion</h3>
+            <p>The DP framework offers a flexible and nuanced approach to studying men and masculinities. 
+            By focusing on how individuals construct their gender identities through everyday discourse, DP captures the complexity and variability of masculinity. 
+            Unlike traditional frameworks like GRSP, which view masculinity as a fixed set of roles, DP emphasizes the fluid and dynamic nature of masculinity, highlighting the active role individuals play in shaping their identities.</p>            
+
+        </div>
+        
+      </div>
+      
+</body>
+</html>

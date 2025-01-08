@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="week1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true
+            },
+            "HTML-CSS": { scale: 90 },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="week1.js" defer></script>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="logo"><h1>A/G</h1></div>
+    <div class="sections">
+        <div class="sections-sub">
+            <a href="#sec1">Introduction</a>
+        </div>
+        <div class="sections-sub">
+            <a href="#sec2">Correlation</a>
+        </div>
+        <div class="sections-sub">
+            <a href="#sec3">Problems</a>
+        </div>
+        <div class="sections-sub">
+            <a href="#sec4">Alternatives</a>
+        </div>
+    </div>
+</div>
+
+<!-- Introduction -->
+<div class="intro">
+    <div class="headers">
+        <h1 class="name">Arjun Ghumman</h1>
+        <h1 class="title">Introduction to Correlation</h1>
+    </div>
+</div>
+
+<!-- Section 1 -->
+<div class="section sec1">
+    <h2 id="sec1">Anova vs Regression</h2>
+    <p>ANOVA (Analysis of Variance) and regression are both statistical methods for analyzing relationships between variables. ANOVA compares means across multiple groups to identify differences, while regression extends this by modeling the relationship between a dependent variable and one or more independent variables, often with the goal of providing predictions. Regression can be seen as a generalization of ANOVA, as it not only tests group differences (as ANOVA does) but also quantifies and predicts how variables influence each other.</p>
+    <!-- GLM Equations -->
+    <h3>General Linear Model Equations Explained</h3>
+        <p>\[Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \epsilon\]</p>
+        <p><strong>Explanation:</strong> In ANOVA, the GLM equation models the relationship between a dependent variable (\(Y\)) and categorical independent variables (\(X_1, X_2, \dots\)) that represent group membership. The coefficients (\(\beta_1, \beta_2, \dots\)) estimate the effects of these groups, while \(\beta_0\) is the overall mean, and \(\epsilon\) represents random error.</p>
+        <p><strong>Explanation:</strong> In regression, the GLM equation extends to include continuous and/or categorical independent variables (\(X_1, X_2, \dots\)) to explain or predict the dependent variable (\(Y\)). The coefficients (\(\beta_1, \beta_2, \dots\)) quantify the effect of each independent variable, with \(\beta_0\) as the intercept and \(\epsilon\) as the residual error.</p>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+              <tr>
+                  <th>Aspect</th>
+                  <th>ANOVA</th>
+                  <th>Regression</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><strong>Focus</strong></td>
+                  <td>Compares means across groups</td>
+                  <td>Models relationships between variables</td>
+              </tr>
+              <tr>
+                  <td><strong>Independent Variables</strong></td>
+                  <td>Categorical (e.g., groups or factors)</td>
+                  <td>Continuous or categorical</td>
+              </tr>
+              <tr>
+                  <td><strong>Goal</strong></td>
+                  <td>Test if group means differ</td>
+                  <td>Quantify effects and make predictions</td>
+              </tr>
+              <tr>
+                  <td><strong>Output</strong></td>
+                  <td>F-statistic and p-value for group differences</td>
+                  <td>Regression coefficients (\(\beta\)) and R²</td>
+              </tr>
+          </tbody>
+      </table>
+</div>
+
+<!-- Section 2 -->
+<div class="section sec2">
+    <h2 id="sec2">Correlation</h2>
+    <h3>Back to Basics: Understanding Correlation</h3>
+    <p>ANOVA is a powerful tool for analyzing differences between groups, where the independent variables are <strong>categorical</strong>. But what happens when we are interested in the relationship between two <strong>continuous variables</strong>? In such cases, ANOVA isn't suitable, and we need an alternative.</p>
+    <div class="image">
+      <img src="img1.png" alt="">
+    </div>
+    <p>For simple relationships between two continuous variables, we can use <strong>correlation</strong>. Correlation measures the strength and direction of the linear relationship between two variables, providing a straightforward way to understand how they are connected.</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Aspect</th>
+                <th>ANOVA</th>
+                <th>Correlation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Type of Variables</strong></td>
+                <td>Categorical (e.g., groups or factors)</td>
+                <td>Continuous</td>
+            </tr>
+            <tr>
+                <td><strong>Focus</strong></td>
+                <td>Compares group means</td>
+                <td>Measures the strength and direction of relationships</td>
+            </tr>
+            <tr>
+                <td><strong>Output</strong></td>
+                <td>F-statistic and p-value</td>
+                <td>Correlation coefficient (\(r\))</td>
+            </tr>
+            <tr>
+                <td><strong>Equation</strong></td>
+                <td>\(Y = \beta_0 + \beta_1X + \epsilon\)</td>
+                <td>\(r = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}\)</td>
+            </tr>
+            <tr>
+                <td><strong>Example</strong></td>
+                <td>Does test performance differ by group (e.g., gender)?</td>
+                <td>Is there a relationship between hours studied and test scores?</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>What is a correlation?</h3>
+
+    <p><strong>Definition:</strong> Correlation measures the strength and direction of the linear relationship between two continuous variables. The correlation coefficient (\(r\)) ranges from:</p>
+    <ul>
+        <li>\(+1\): Perfect positive linear relationship</li>
+        <li>\(-1\): Perfect negative linear relationship</li>
+        <li>\(0\): No linear relationship</li>
+    </ul>
+
+    <div class="image">
+      <img src="img2.png" alt="">
+    </div>
+
+    <h3>Math behind the magic</h3>
+    <ol>
+      <li>Calculate the means of \(X\) and \(Y\):
+          <ul>
+              <li>\(\bar{X} = \frac{\sum X_i}{n}\): This gives us the average value of \(X\).</li>
+              <li>\(\bar{Y} = \frac{\sum Y_i}{n}\): This gives us the average value of \(Y\).</li>
+          </ul>
+      </li>
+      <li>Subtract the means:
+          <ul>
+              <li>\(X_i - \bar{X}\): Find how far each value of \(X\) is from the average.</li>
+              <li>\(Y_i - \bar{Y}\): Find how far each value of \(Y\) is from the average.</li>
+          </ul>
+      </li>
+      <li>Multiply deviations:
+          <ul>
+              <li>\((X_i - \bar{X})(Y_i - \bar{Y})\): Multiply the deviations to see how \(X\) and \(Y\) vary together.</li>
+          </ul>
+      </li>
+      <li>Square deviations:
+          <ul>
+              <li>\((X_i - \bar{X})^2\): Find how much \(X\) values vary on their own.</li>
+              <li>\((Y_i - \bar{Y})^2\): Find how much \(Y\) values vary on their own.</li>
+          </ul>
+      </li>
+      <li>Sum results:
+          <ul>
+              <li>\(\sum (X_i - \bar{X})(Y_i - \bar{Y})\): Add up how much \(X\) and \(Y\) vary together.</li>
+              <li>\(\sum (X_i - \bar{X})^2\): Add up how much \(X\) varies on its own.</li>
+              <li>\(\sum (Y_i - \bar{Y})^2\): Add up how much \(Y\) varies on its own.</li>
+          </ul>
+      </li>
+      <li>Divide by the product of standard deviations:
+          <ul>
+              <li>\(r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}}\): Combine everything to calculate the correlation coefficient, which tells us the strength and direction of the relationship.</li>
+          </ul>
+      </li>
+    </ol>
+
+    <h3>Test Example</h3>
+    <p>Let's say we have two variables, \(X\) and \(Y\), with the following values:</p>
+    <h3>Example: Calculating Correlation for Given Data</h3>
+
+    <p>We have the following data for \(X\) and \(Y\):</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>\(X\)</th>
+                <th>\(Y\)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>114</td>
+                <td>114</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>79</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>129</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>109</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>107</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>114</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>104</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>77</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>130</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>81</td>
+                <td>89</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h4>Step-by-Step Calculation</h4>
+    <ol>
+        <li>Calculate the means of \(X\) and \(Y\):
+            <ul>
+                <li>\(\bar{X} = \frac{114 + 79 + 129 + 109 + 107 + 114 + 104 + 77 + 130 + 81}{10} = 104.4\)</li>
+                <li>\(\bar{Y} = \frac{114 + 101 + 135 + 110 + 89 + 123 + 87 + 102 + 126 + 89}{10} = 110.6\)</li>
+            </ul>
+        </li>
+        <li>Subtract the means:
+            <ul>
+                <li>\(X - \bar{X} = [9.6, -25.4, 24.6, 4.6, 2.6, 9.6, -0.4, -27.4, 25.6, -23.4]\)</li>
+                <li>\(Y - \bar{Y} = [3.4, -9.6, 24.4, -0.6, -21.6, 12.4, -23.6, -8.6, 15.4, -21.6]\)</li>
+            </ul>
+        </li>
+        <li>Multiply deviations:
+            <ul>
+                <li>\((X - \bar{X})(Y - \bar{Y}) = [32.64, 243.84, 600.24, -2.76, -56.16, 119.04, 9.44, 235.64, 394.24, 504.24]\)</li>
+            </ul>
+        </li>
+        <li>Square deviations:
+            <ul>
+                <li>\((X - \bar{X})^2 = [92.16, 645.16, 605.16, 21.16, 6.76, 92.16, 0.16, 750.76, 655.36, 547.56]\)</li>
+                <li>\((Y - \bar{Y})^2 = [11.56, 92.16, 595.36, 0.36, 466.56, 153.76, 556.96, 73.96, 237.16, 466.56]\)</li>
+            </ul>
+        </li>
+        <li>Sum results:
+            <ul>
+                <li>\(\sum (X - \bar{X})(Y - \bar{Y}) = 2080.6\)</li>
+                <li>\(\sum (X - \bar{X})^2 = 3415\)</li>
+                <li>\(\sum (Y - \bar{Y})^2 = 2653.4\)</li>
+            </ul>
+        </li>
+        <li>Divide by the product of standard deviations:
+            <ul>
+                <li>\(r = \frac{\sum (X - \bar{X})(Y - \bar{Y})}{\sqrt{\sum (X - \bar{X})^2 \cdot \sum (Y - \bar{Y})^2}}\)</li>
+                <li>\(r = \frac{2080.6}{\sqrt{3415 \cdot 2653.4}} = \frac{2080.6}{3007.1} \approx 0.692\)</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p><strong>Conclusion:</strong> The correlation coefficient \(r \approx 0.70\), indicating a moderately strong positive relationship between \(X\) and \(Y\).</p>
+    
+    <div class="image">
+      <img src="img3.png" alt="">
+    </div>
+  
+ 
+  </div>
+
+<!-- Section 3 -->
+<div class="section sec3">
+    <h2 id="sec3">Potential Problems</h2>
+    <h3>Potential Problems with Pearson Correlation</h3>
+
+    <p>The Pearson correlation is a popular tool, but it has limitations that can lead to misinterpretations. Below is a summary of potential issues:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Problem</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Possible Solution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Assumes Linearity</strong></td>
+                <td>The Pearson correlation only measures linear relationships and cannot capture non-linear patterns.</td>
+                <td>A parabolic relationship between \(X\) and \(Y\) may result in \(r = 0\), even though they are clearly related.</td>
+                <td>Use non-linear models or Spearman's rank correlation for non-linear relationships.</td>
+            </tr>
+            <tr>
+                <td><strong>Sensitive to Outliers</strong></td>
+                <td>Outliers can drastically affect the correlation coefficient, leading to misleading results.</td>
+                <td>A single extreme value can inflate or deflate \(r\), distorting the true relationship.</td>
+                <td>Remove outliers or use robust correlation measures like Kendall’s Tau.</td>
+            </tr>
+            <tr>
+                <td><strong>Ignores Causation</strong></td>
+                <td>Correlation does not imply causation; two variables may be related due to a third factor.</td>
+                <td>Ice cream sales and drowning incidents are correlated because both increase in summer, not because one causes the other.</td>
+                <td>Analyze context carefully or use methods like regression to explore causation.</td>
+            </tr>
+            <tr>
+                <td><strong>Requires Normality</strong></td>
+                <td>Pearson correlation assumes that both variables are normally distributed.</td>
+                <td>Skewed or non-normal data can violate assumptions and lead to incorrect results.</td>
+                <td>Use non-parametric methods like Spearman's rank correlation for non-normal data.</td>
+            </tr>
+            <tr>
+                <td><strong>Limited to Pairwise Analysis</strong></td>
+                <td>Pearson correlation only examines the relationship between two variables, ignoring confounding variables.</td>
+                <td>Correlation between two variables may change when a third variable is considered.</td>
+                <td>Use partial correlation or regression analysis to account for multiple variables.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Is there a relationship in the following image?</h3>
+    <div class="image">
+      <img src="img4.png" alt="">
+    </div>
+
+    <h3>Are the outliers impacting the relationship?</h3>
+    <div class="image">
+      <img src="img5.png" alt="">
+    </div>
+
+    <h3>Correlation or Causation?</h3>
+    <div class="image">
+      <img src="data:image/png;base64,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" alt="">
+    </div>
+
+    <div class="image">
+      <img src="https://magicpanel.in/data/media_generated/uCI7oz1jvrJSGfk29m0TdLVK1677485317.jpeg" alt="">
+    </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section sec4">
+    <h2 id="sec4">Alternatives to Pearson Correlation</h2>
+    <h3>Alternatives to Correlation</h3>
+
+    <p>While correlation is a powerful tool for measuring linear relationships, it may not be suitable for all data types or situations. Here are some alternatives:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>When to Use</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Spearman's Rank Correlation</strong></td>
+                <td>When the relationship is monotonic but not linear.</td>
+                <td>Measures the strength and direction of the association between two variables based on their ranks.</td>
+                <td>Comparing exam scores to study hours where the relationship flattens at higher scores.</td>
+            </tr>
+            <tr>
+                <td><strong>Kendall's Tau</strong></td>
+                <td>For small datasets or when there are many tied ranks.</td>
+                <td>Measures the strength of association between two variables based on concordant and discordant pairs.</td>
+                <td>Evaluating agreement between two judges' rankings of a contest.</td>
+            </tr>
+            <tr>
+                <td><strong>Chi-Square Test of Independence</strong></td>
+                <td>For categorical variables.</td>
+                <td>Tests whether two categorical variables are independent of each other.</td>
+                <td>Examining the relationship between gender and voting preference.</td>
+            </tr>
+            <tr>
+                <td><strong>Mutual Information</strong></td>
+                <td>For capturing non-linear relationships.</td>
+                <td>Measures the dependency between two variables by assessing shared information.</td>
+                <td>Analyzing the relationship between income and spending patterns.</td>
+            </tr>
+            <tr>
+                <td><strong>Distance Correlation</strong></td>
+                <td>For detecting any kind of dependence, linear or non-linear.</td>
+                <td>Quantifies both linear and non-linear dependencies between two variables.</td>
+                <td>Studying the relationship between temperature and energy consumption.</td>
+            </tr>
+            <tr>
+                <td><strong>Regression Analysis</strong></td>
+                <td>When one variable is dependent on another.</td>
+                <td>Models the relationship between a dependent variable and one or more independent variables.</td>
+                <td>Predicting house prices based on size and location.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Spearman's Correlation</h3>
+    <p>Spearman’s rank correlation measures the strength and direction of the association between two variables based on their ranks.</p>
+    <ol>
+        <li><strong>Assign ranks to \(X\) and \(Y\):</strong>
+            <p>Convert the values of \(X\) and \(Y\) into ranks.</p>
+            <p><em>Why?</em> This eliminates the effect of the scale of measurement and focuses on the relative positions of values.</p>
+        </li>
+        <li><strong>Calculate the rank differences:</strong>
+            <p>For each pair of values, compute \(d_i = R(X_i) - R(Y_i)\), where \(R(X_i)\) and \(R(Y_i)\) are the ranks of \(X_i\) and \(Y_i\).</p>
+            <p><em>Why?</em> This measures how much the rankings differ for each data point.</p>
+        </li>
+        <li><strong>Square the rank differences:</strong>
+            <p>Compute \(d_i^2\) for each pair.</p>
+            <p><em>Why?</em> Squaring ensures all differences contribute positively to the calculation.</p>
+        </li>
+        <li><strong>Sum the squared rank differences:</strong>
+            <p>\(\sum d_i^2\)</p>
+            <p><em>Why?</em> This aggregates the total discrepancy between ranks.</p>
+        </li>
+        <li><strong>Compute Spearman’s rank correlation:</strong>
+            <p>Use the formula:</p>
+            <p>\(r_s = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}\)</p>
+            <p><em>Why?</em> This scales the rank differences to produce a correlation coefficient between -1 and 1.</p>
+        </li>
+    </ol>
+
+    <h3>2. Kendall's Tau</h3>
+    <p>Kendall’s Tau measures the strength of association between two variables based on the number of concordant and discordant pairs.</p>
+    <p>Concordant and discordant pairs describe how two variables’ rankings align.</p>
+    <p>Pairs are formed by comparing every possible pair of data points in the dataset. Each pair of points represents two observations, and their relationship (concordant or discordant) is classified based on their rankings across the two variables.</p>
+    <ol>
+      <li><strong>Identify all pairs of observations:</strong>
+          <p>Compare every pair of \((X_i, Y_i)\) with every other pair \((X_j, Y_j)\).</p>
+          <p><em>Why?</em> To evaluate how rankings align between the two variables.</p>
+      </li>
+      <li><strong>Classify pairs as concordant or discordant:</strong>
+          <ul>
+              <li><strong>Concordant:</strong> A pair is concordant if the rankings of both \(X\) and \(Y\) are in the same order. For example, if \(X_i > X_j\) and \(Y_i > Y_j\), or \(X_i < X_j\) and \(Y_i < Y_j\).</li>
+              <li><strong>Discordant:</strong> A pair is discordant if the rankings of \(X\) and \(Y\) are in opposite order. For example, if \(X_i > X_j\) and \(Y_i < Y_j\), or \(X_i < X_j\) and \(Y_i > Y_j\).</li>
+          </ul>
+          <p><em>Why?</em> This determines whether the rankings agree or disagree for each pair.</p>
+      </li>
+      <li><strong>Count the concordant and discordant pairs:</strong>
+          <p>\(C\): Total concordant pairs.</p>
+          <p>\(D\): Total discordant pairs.</p>
+          <p><em>Why?</em> These counts form the basis for the calculation.</p>
+      </li>
+      <li><strong>Compute Kendall’s Tau:</strong>
+          <p>Use the formula:</p>
+          <p>\(\tau = \frac{C - D}{\frac{1}{2}n(n-1)}\)</p>
+          <p><em>Why?</em> This scales the difference between concordant and discordant pairs to produce a coefficient between -1 and 1.</p>
+      </li>
+    </ol>
+    <h3>Example: Calculating Kendall's Tau</h3>
+
+    <p>Suppose you have three data points:</p>
+    <ul>
+        <li>\(X = [1, 2, 3]\)</li>
+        <li>\(Y = [3, 2, 1]\)</li>
+    </ul>
+
+    <p>Possible pairs and their classifications:</p>
+    <ol>
+        <li>
+            Compare \((1, 3)\) with \((2, 2)\): <strong>Discordant</strong> 
+            (because \(X_1 < X_2\) but \(Y_1 > Y_2\)).
+        </li>
+        <li>
+            Compare \((1, 3)\) with \((3, 1)\): <strong>Discordant</strong> 
+            (because \(X_1 < X_3\) but \(Y_1 > Y_3\)).
+        </li>
+        <li>
+            Compare \((2, 2)\) with \((3, 1)\): <strong>Discordant</strong> 
+            (because \(X_2 < X_3\) but \(Y_2 > Y_3\)).
+        </li>
+    </ol>
+
+    <p>Result:</p>
+    <ul>
+        <li>Number of concordant pairs (\(C\)) = 0 (no concordant pairs).</li>
+        <li>Number of discordant pairs (\(D\)) = 3 (all pairs are discordant).</li>
+        <li>Kendall's Tau (\(\tau\)) is calculated as:</li>
+    </ul>
+
+    <p>\[
+    \tau = \frac{C - D}{\frac{1}{2}n(n-1)} = \frac{0 - 3}{3} = -1
+    \]</p>
+
+</div>
+      
+</body>
+</html>

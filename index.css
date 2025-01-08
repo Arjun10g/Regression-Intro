@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+/* Header container */
+.header {
+  display: none; /* Ensure the header is a flex container */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  background: transparent;
+  color: white;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  box-shadow: 0px 4px 10px floralwhite;
+  position: fixed;
+  top: 0;
+}
+
+/* Name styles */
+.name {
+  display: flex;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 25px;
+  width: 89%; /* Take up the full width */
+}
+
+/* First and Last name */
+.first-name, .last-name {
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  gap: 2px;
+}
+
+/* Span for individual letters */
+.name div span {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 
+      2px 2px 5px rgba(0, 0, 0, 0.3),
+      0px 0px 10px rgba(255, 255, 255, 0.5),
+      0px 0px 20px rgba(173, 216, 230, 0.7),
+      0px 0px 30px rgba(173, 216, 230, 0.8);
+}
+
+
+
+.shoutout {
+  color:#444444;
+	position: fixed;
+  left: 20px;
+  bottom: 20px;
+	z-index: 10;
+	font-family: 'Montserrat';
+	font-size: 16px;
+}
+
+.shoutout a{
+  transition: ease-in-out color .5s;
+  text-decoration:none;
+  color: #555555;
+	cursor: pointer;
+}
+.shoutout a:hover{
+  color: #E67162;
+	cursor: pointer;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+    background-color: #1a1a1a;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23474747' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+canvas{
+  opacity:1;
+  color:#000000;
+  transition: opacity 1s ease-in-out;
+}
+
+.title {
+	z-index: 10;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 250px;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: 'Montserrat';
+	text-align: center;
+	width: 100%;
+}
+
+.title h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: 200;
+	font-size: 40px;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	transition: ease-in-out color .5s;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 2px silver;
+}
+
+.title h3:hover {
+	color: #5F54FB;
+	cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.star {
+    transform-style: preserve-3d;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    color: red;
+}
+
+.star:before {
+    position: absolute;
+    content: '\2726';
+    color: inherit;
+    inset: 0;
+    text-shadow: 0 0 .8em #fff5;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #F9F6EF;
+    display: grid;
+    place-content: center;
+    background-image: radial-gradient(circle at 50% 50%, #2f3040, #1f2020);
+    background-repeat: repeat-y;
+}
+
+/* 2 */
+
+
+.scroller {
+    padding: 1rem;
+    scroll-timeline-name: --scroller;
+    scroll-timeline-axis: inline;
+    gap: 1rem;
+    display: none;
+}
+
+ol,
+ul {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list-item;
+    perspective: 9000px;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+    opacity: 0;
+}
+
+ol > li {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    overflow: hidden;
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+    padding: 10px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+ol > li::before {
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+ol > li::after {
+    content: "";
+    background-image: var(--bg);
+    position: absolute;
+    inset: -20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.25);
+    transition: transform 0.5s ease-out, opacity 0.4s linear;
+    opacity: 0;
+    z-index: -1;
+}
+
+ol > li:hover {
+    color: #fff;
+}
+
+ol > li:hover::after {
+    transform: scale(1.1) rotate(4deg);
+    opacity: 0.8;
+}
+
+p,
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #aaa;
+    font-weight: normal;
+}
+
+
+@keyframes intro {
+    from {
+        transform-origin: center left;
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        transform-origin: center left;
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes outro {
+    from {
+        transform-origin: center right;
+        opacity: 1;
+        scale: 1;
+    }
+    to {
+        transform-origin: center right;
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    ol > li {
+      width: 80vw;
+      height: 30vh;
+    }
+    .title h3 {
+      font-size: 24px;
+    }
+    .shoutout {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    ol > li {
+      width: 90vw;
+      height: 25vh;
+    }
+    .title h3 {
+      font-size: 20px;
+    }
+    .shoutout {
+      font-size: 10px;
+    }
+  }
