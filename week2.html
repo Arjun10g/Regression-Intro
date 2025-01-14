@@ -25,447 +25,510 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
     <script src="week1.js" defer></script>
-    <style>
-        body{
-            background-image: url('https://images.unsplash.com/photo-1550053808-52a75a05955d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-        }
-    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="paper" id="paper1">Hermeneutics, Josselson</div>
-        <div class="paper" id="paper2">Polkinghorne, 1990</div>
-        <div class="paper" id="paper3">Ponterotto, 2005</div>
-        <div class="paper" id="paper4">Willig, 2012</div>
-        <div class="paper" id="paper5">My Questions</div>
-      </div>
-    
-      <div class="content-box" id="contentBox">
-        <div class="content" id="content1">
-            <h2>Introduction</h2>
-            <p>Ruthellen Josselson explored two key forms of hermeneutics as defined by Paul Ricoeur: the hermeneutics of faith and the hermeneutics of suspicion. These two stances offered different interpretive approaches to narrative research, each emphasizing different aspects of meaning in texts.</p>
-            
-            <h3>Hermeneutics of Faith</h3>
-            <ul class = "styled-list">
-                <li>
-                    <p><strong>Aims:</strong> This approach sought to restore the original meaning of the text by understanding and respecting the participant's voice as it was presented. It emphasized empathy, aiming to understand the speaker's intended message and context without imposing external interpretations.</p>
-                </li>
-                <li>
-                    <p><strong>Process:</strong> Involved rigorous self-reflection and attempted to bracket the researcher’s biases to engage deeply with the participant's experiences. This method valued the subjective truths conveyed by participants, treating their narratives as authentic expressions of their lived realities.</p>
-                </li>
-                <li>
-                    <p><strong>Ethical Considerations:</strong> Maintained a commitment to faithfully representing participants' expressed meanings, which included handling the data sensitively to avoid misrepresentation and ensuring confidentiality to protect participant identities.</p>
-                </li>
-            </ul>
-          
-            <h3>Hermeneutics of Suspicion</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Aims:</strong> Contrasted sharply with the hermeneutics of faith by aiming to uncover hidden or obscured meanings within narratives. This approach remained skeptical of the surface meanings and sought to reveal underlying forces or contradictions that may have influenced the narrative.</p>
-                </li>
-                <li>
-                    <p><strong>Process:</strong> This method involved a critical analysis of the text, looking beyond what was immediately apparent to identify potential distortions or unconscious elements that may have shaped the narrative. It often utilized theories from psychology, sociology, and cultural studies as tools to decode deeper meanings.</p>
-                </li>
-                <li>
-                    <p><strong>Ethical Considerations:</strong> Involved challenges related to the authority the researcher asserted over the text, potentially going beyond the participant's self-understanding. This raised ethical issues about representation and the potential to impose interpretations that participants might not have recognized or agreed with.</p>
-                </li>
-            </ul>
-          
-            <h3>Application to Narrative Research</h3>
-            <ul class="styled-list">
-                <li>
-                    <i class="fas fa-book-reader"></i>
-                    <p>Narrative as a Mode of Understanding: Narratives were seen as a way individuals organized their lives, giving shape and meaning to their experiences.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <p>Narrative psychology viewed human experience as constructed through autobiographical processes, where meanings were created, not just replicated.</p>
-                </li>
-                <li>
-                    <i class="fas fa-pen"></i>
-                    <p>The researcher’s task was to interpret these narratives, not merely recount them, but offer deeper insights or "tellings" at a different level of discourse.</p>
-                </li>
-            </ul>
-          
-            <h3>The Researcher’s Role</h3>
-            <ul class="styled-list">
-                <li>
-                    <i class="fas fa-clipboard"></i>
-                    <p>From the hermeneutics of faith, the researcher focused on understanding and elucidating the subjective meanings of participants.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <p>From the hermeneutics of suspicion, the researcher critically questioned the narratives and looked for hidden motives or unconscious processes that shaped the narrative.</p>
-                </li>
-                <li>
-                    <i class="fas fa-pen"></i>
-                    <p>Faith required empathy and trust, while suspicion required a more critical and skeptical stance.</p>
-                </li>
-            </ul>
-          
-            <h3>Reflexivity and Ethics</h3>
-            <ul class="styled-list">
-                <li>
-                    <i class="fas fa-retweet"></i>
-                    <p>Reflexivity: The researcher needed to be aware of how their own background, biases, and assumptions affected the interpretation of the text.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <p>In the hermeneutics of faith, reflexivity involved maintaining an openness to the participant’s subjective world while acknowledging that the researcher’s perspective inevitably shaped the interpretation.</p>
-                </li>
-                <li>
-                    <i class="fas fa-pen"></i>
-                    <p>In the hermeneutics of suspicion, reflexivity required the researcher to critically examine their assumptions and the ways in which they might have imposed meanings on the text.</p>
-                </li>
-                <li>
-                    <i class="fas fa-comments"></i>
-                    <p>Ethics: The hermeneutics of faith was closely linked to ethical concerns in research, particularly in representing marginalized voices and avoiding distortion of the participant’s meanings.</p>
-                </li>
-                <li>
-                    <i class="fas fa-hands-helping"></i>
-                    <p>The hermeneutics of suspicion required the researcher to be honest about the power dynamics involved in the interpretation process and the ways in which they uncovered hidden meanings.</p>
-                </li>
-            </ul>
-            
-            <h3>Potential Problems</h3>
-            <p>A potential problem with the Hermeneutics of Faith was that it risked overly trusting the participant's narrative, potentially overlooking discrepancies, biases, or unspoken dynamics that may have distorted the truth. This approach could have led to an uncritical acceptance of the participant's self-portrayal, which might have left out deeper layers of meaning or hidden conflicts.</p>
-            <p>Conversely, the Hermeneutics of Suspicion could have led to excessive skepticism, where the researcher might have imposed interpretations that were not grounded in the participant’s reality. This approach risked misinterpreting or distorting the narrative by assuming hidden motives or unconscious influences, possibly undermining the participant’s subjective experience and their intended meaning.</p>
-          
-            <h3>Combining Both Approaches</h3>
-            <ul class="styled-list">
-                <li>
-                    <i class="fas fa-link"></i>
-                    <p>Josselson suggested that these two interpretive approaches could be interlinked in narrative research.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <p>The researcher could alternate between a hermeneutics of faith (seeking to understand the participant’s subjective meanings) and a hermeneutics of suspicion (looking for hidden or disguised meanings).</p>
-                </li>
-                <li>
-                    <i class="fas fa-pen"></i>
-                    <p>This combination allowed for a more nuanced and comprehensive understanding of narrative texts.</p>
-                </li>
-            </ul>
-            
-            <h3>Biases at Play</h3>
-            <ul class="styled-list">
-                <li><strong>Confirmation Bias (Hermeneutics of Faith):</strong> Researchers may have sought information that supported the participant’s narrative while ignoring conflicting evidence, leading to selective interpretation.</li>
-                <li><strong>Halo Effect (Hermeneutics of Faith):</strong> A positive impression of a participant could have led the researcher to overlook potential issues in the narrative or give undue credibility to everything the participant said.</li>
-                <li><strong>Suspicion Bias (Hermeneutics of Suspicion):</strong> Researchers may have been predisposed to distrust the surface meaning of the narrative, over-interpreting data or finding motives and conflicts that may not have been present.</li>
-                <li><strong>Fundamental Attribution Error (Hermeneutics of Suspicion):</strong> Researchers may have overemphasized internal characteristics (e.g., hidden motives) to explain behavior, while underestimating external factors like social context or pressures.</li>
-                <li><strong>Anchoring Bias (Both Approaches):</strong> Initial information or first impressions may have overly influenced subsequent interpretations, whether from a place of trust (faith) or skepticism (suspicion).</li>
-                <li><strong>Projection Bias (Both Approaches):</strong> Researchers might have projected their own beliefs, emotions, or experiences onto the participant’s narrative, leading to inaccurate interpretations based on assumptions.</li>
-                <li><strong>Negativity Bias (Hermeneutics of Suspicion):</strong> Researchers may have given more weight to negative or suspicious elements of the narrative, possibly interpreting neutral aspects as indicators of hidden meaning or deception.</li>
-            </ul>
-            
-            <h3>Problems with Narrative Research</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Memory Distortions:</strong> The hippocampus played a key role in integrating information to form coherent memories, but during retrieval, details may have been modified or new information may have been incorporated. This led to distortions, particularly when the same memory was recalled repeatedly. Over time, the memory became less reliable and more susceptible to alterations.</p>
-                </li>
-                <li>
-                    <p><strong>Flashbulb Memories (Amygdala):</strong> The amygdala enhanced memory formation during emotionally charged events, making these memories vivid and memorable. However, these "flashbulb" memories were often inaccurate despite feeling highly detailed. Emotional intensity may have focused the memory on certain aspects while neglecting others, contributing to selective and potentially distorted recall.</p>
-                </li>
-                <li>
-                    <p><strong>Memory Reconsolidation:</strong> Each time a memory was recalled, it underwent reconsolidation, where the original memory was retrieved and potentially altered before being stored again. This process introduced the risk of integrating false details or reshaping the memory based on current beliefs or emotional states, making the narrative less reliable over time.</p>
-                </li>
-            </ul>
+  <div class="nav-bar">
+    <div class="logo"><h1>A/G</h1></div>
+    <div class="sections">
+        <div class="sections-sub">
+            <a href="#sec1">Introduction</a>
         </div>
-        
-        <div class="content" id="content2">
-            <h2>Language and Qualitative Research</h2>
-            <p>This paper examined the relationship between natural language and human reality, especially within the context of qualitative research. It explored whether natural language accurately reflected psychological and human reality or was merely a literary construction imposed upon a differently structured reality. The paper raised critical philosophical concerns about the capacity of language to serve as a tool for understanding human experience. The paper critiqued the postmodern skepticism toward language while defending the role of natural language in qualitative research. It acknowledged that language shaped experience but argued, following Merleau-Ponty, that language was not a barrier to understanding reality but an active participant in constructing meaning. For qualitative research, natural language remained central to investigating human experience, despite the challenges posed by postmodern critiques.</p>
-            
-            <h3>Qualitative Research and Natural Language</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Natural Language:</strong> Referred to the everyday, spoken or written language that people used to describe their experiences, communicate with others, and express their understanding of the world. This paper asked a key question: did natural language correspond to the structure of the human realm, or was it merely a literary imposition?</p>
-                </li>
-                <li>
-                    <p>Qualitative research posited that natural language offered a more accurate portrayal of human psychological reality than mathematical or formalized language. Natural language was viewed as fundamental to understanding the human realm. However, the possibility that natural language might simply construct or impose meaning rather than reflect reality called into question a foundational premise of qualitative research.</p>
-                </li>
-                <li>
-                    <p>Qualitative research highlighted the uniqueness of human reality, using natural language to capture complex characteristics like values and purpose, and to develop findings directly from the data without imposing rigid categories. A potential problem arose from the inherent subjectivity of natural language, which may have introduced ambiguity or bias in interpreting human experiences.</p>
-                </li>
-            </ul>
-        
-            <h3>Qualitative vs. Quantitative Approaches</h3>
-            <p>Qualitative methodology focused on gathering firsthand knowledge through immersive techniques like participant observation and in-depth interviews, aiming to understand phenomena as they were experienced without reducing them to formal categories. From a quantitative perspective, a key problem with qualitative methodology was the lack of standardization and replicability. Without predefined categories or formal measurements, it became difficult to produce consistent, objective results that could be statistically analyzed, generalized, or compared across larger populations.</p>
-        
-            <h3>Language and the Enlightenment Tradition</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Epistemological View</strong>: During the Enlightenment, language was seen as a transparent medium to represent reality, reflecting objects and experiences captured by the senses.</p>
-                </li>
-                <li>
-                    <p><strong>Logical Positivism</strong>: Attempts were made to create an ideal, objective language for science, removing metaphysical elements, but these efforts ultimately failed.</p>
-                </li>
-            </ul>
-            
-            <h3>Undermining the Enlightenment Tradition</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Critique of Language</strong>: 20th-century developments in linguistics and philosophy challenged the Enlightenment view of language as a reflection of reality. Language systems were seen as shaping human perception and experience.</p>
-                </li>
-                <li>
-                    <p><strong>Incommensurate Language Games</strong>: Wittgenstein's theory suggested that different cultures and societies played distinct "language games," making neutral descriptions of reality impossible and raising concerns about mutual understanding.</p>
-                </li>
-            </ul>
-            
-            <h3>Universal Linguistic Structure</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Levi-Strauss and Chomsky</strong>: Levi-Strauss and Chomsky proposed that beneath the diversity of languages lay a common, universal structure. Chomsky’s innate grammar and Levi-Strauss’s universal thought patterns in myths suggested shared meaning across languages.</p>
-                </li>
-            </ul>
-            
-            <h3>Post-Enlightenment Skepticism</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Postmodern Critique</strong>: Philosophers like Rorty, Lyotard, and Derrida critiqued the idea that language could represent reality, arguing that knowledge and truth were contingent on cultural and historical contexts.</p>
-                </li>
-                <li>
-                    <p><strong>Rorty's Pragmatism</strong>: Rorty advocated for ongoing conversations without the expectation of uncovering ultimate truths, viewing science as one "genre of literature" rather than a path to foundational knowledge.</p>
-                </li>
-                <li>
-                    <p><strong>Lyotard's Postmodernism</strong>: Lyotard argued that the grand narratives of the Enlightenment, focused on the pursuit of truth, had lost their authority, reducing knowledge to a set of different language games.</p>
-                </li>
-                <li>
-                    <p><strong>Derrida's Deconstruction</strong>: Derrida believed that language's inherent contradictions prevented it from fully representing reality, as meaning always exceeded any system of language.</p>
-                </li>
-            </ul>
-            
-            <h3>Maurice Merleau-Ponty's Response</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Language as Expression</strong>: Merleau-Ponty argued that language did not block experience but actively shaped and expressed it. He believed language, perception, and the body were intertwined in creating meaning.</p>
-                </li>
-                <li>
-                    <p><strong>Creative Speech</strong>: Merleau-Ponty emphasized that speech was a creative process through which new meaning was constructed, rather than a simple translation of pre-existing thoughts.</p>
-                </li>
-                <li>
-                    <p><strong>Perception and Language</strong>: He suggested that perception was structured similarly to language, and that truth and reality were created through language and reflection rather than existing beforehand.</p>
-                </li>
-            </ul>
-            
-            <h3>Language in Qualitative Research</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Self-Study in Human Sciences</strong>: Qualitative researchers were part of the human realm they studied, engaging in a form of self-study. Language was both a part of lived experience and a tool for scientific reflection in this process.</p>
-                </li>
-                <li>
-                    <p><strong>Defending Natural Language</strong>: Despite postmodern critiques, the paper concluded by emphasizing the need to defend natural language as a valid medium for scientific inquiry in the human sciences.</p>
-                </li>
-            </ul>
-                            
+        <div class="sections-sub">
+            <a href="#sec2">Significance Testing</a>
         </div>
-        
-        <div class="content" id="content3">
-            <h2>The Future of Counseling Psychology Research:</h2>
-            <p>Ponterotto’s article advocated for a broader incorporation of qualitative methods in counseling psychology, emphasizing the need for a deep understanding of the philosophy of science that underpinned various research paradigms. Ponterotto encouraged researchers to become "bricoleurs"—drawing on a variety of research paradigms and methodologies to answer complex questions about human behavior, mental health, and social justice.</p>
-            
-            <h3>Overview of Philosophy of Science Parameters:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Ponterotto examined key philosophy of science parameters that underpinned different research paradigms. These parameters included:</p>
-                </li>
-                <li>
-                    <p><strong>Ontology</strong> (nature of reality)</p>
-                </li>
-                <li>
-                    <p><strong>Epistemology</strong> (relationship between the researcher and the participant)</p>
-                </li>
-                <li>
-                    <p><strong>Axiology</strong> (role of values in research)</p>
-                </li>
-                <li>
-                    <p><strong>Rhetorical Structure</strong> (presentation and language used in research)</p>
-                </li>
-                <li>
-                    <p><strong>Methodology</strong> (research methods and procedures)</p>
-                </li>
-            </ul>
-        
-            <h3>Major Research Paradigms:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p><strong>Positivism:</strong></p>
-                    <ul>
-                        <li><p>Based on realism, it assumed a single, objective reality that could be observed, measured, and quantified.</p></li>
-                        <li><p>Relied on the hypothetico-deductive method, which aimed to test hypotheses and establish causal relationships through statistical methods.</p></li>
-                        <li><p>Positivist inquiry focused on prediction, control, and explanation of phenomena.</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <p><strong>Postpositivism:</strong></p>
-                    <ul>
-                        <li><p>Similar to positivism but acknowledged that human intellectual mechanisms were imperfect, and thus reality could only be imperfectly apprehended.</p></li>
-                        <li><p>Emphasized theory falsification rather than theory verification, and while aiming for objectivity, recognized the fallibility of human understanding.</p></li>
-                        <li><p>Focused on identifying cause-effect relationships but with an understanding that full objectivity might not have been possible.</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <p><strong>Constructivism-Interpretivism:</strong></p>
-                    <ul>
-                        <li><p>Assumed multiple, subjective realities, where knowledge was co-constructed through interaction between the researcher and the participants.</p></li>
-                        <li><p>Emphasized the understanding of lived experiences (Erlebnis) through deep reflection and interaction.</p></li>
-                        <li><p>Researchers engaged in a hermeneutic process, uncovering hidden meanings and interpretations within the context of the participants' social environment.</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <p><strong>Critical-Ideological Paradigm:</strong></p>
-                    <ul>
-                        <li><p>Centered on power relations, aiming to challenge and change oppressive social structures.</p></li>
-                        <li><p>Emphasized researcher values and biases as essential to the research process, with the goal of emancipation and transformation.</p></li>
-                        <li><p>The researcher was a proactive agent in promoting social change, focusing on marginalized and oppressed groups.</p></li>
-                    </ul>
-                </li>
-            </ul>
-        
-            <h3>Call for Broader Paradigms in Counseling Psychology:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Ponterotto noted that counseling psychology had traditionally been dominated by positivist and postpositivist paradigms and quantitative methods. He highlighted the field's growing acceptance of qualitative research as critical for further advancing the discipline. However, he argued that qualitative research was still underrepresented in doctoral training programs. According to his survey, only a small percentage of counseling psychology programs required qualitative research courses, and a limited number of dissertations were qualitative.</p>
-                </li>
-            </ul>
-        
-            <h3>Qualitative Research Methods:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Qualitative research was defined as a broad class of empirical procedures designed to describe and interpret participants' experiences in a context-specific setting. This approach contrasted with quantitative methods, which emphasized the quantification of data and the analysis of variables to establish causal relationships. Qualitative research often used in-depth interviews, participant observation, and other methods that allowed researchers to immerse themselves in the context and experiences of participants.</p>
-                </li>
-            </ul>
-        
-            <h3>Example of Qualitative Methods: Consensual Qualitative Research (CQR) and Grounded Theory:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Ponterotto provided detailed examples of how two popular qualitative inquiry methods—Consensual Qualitative Research (CQR) and Grounded Theory (GT)—could be situated within different paradigms.</p>
-                </li>
-                <li>
-                    <p><strong>CQR:</strong> CQR was positioned between postpositivist and constructivist paradigms. It used semi-structured interviews and sought consensus among research team members to identify core ideas and domains. Although it leaned towards postpositivism, CQR also incorporated elements of constructivism, such as acknowledging researcher biases.</p>
-                </li>
-                <li>
-                    <p><strong>Grounded Theory:</strong> Grounded Theory, particularly the version popular in counseling psychology, was largely constructivist. It involved intense researcher-participant interaction and used theoretical sampling to evolve the interview process. GT focused on discovery and developing theory from data, aligning it with the constructivist paradigm.</p>
-                </li>
-            </ul>
-        
-            <h3>Issues with Qualitative Research Adoption:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Ponterotto highlighted that quantitatively trained counseling psychologists often adopted qualitative research methods without fully understanding the philosophical foundations underlying these approaches. This could have led to the "postpositivizing" of qualitative methods, where researchers inadvertently applied quantitative standards to qualitative research (e.g., using predefined categories or structured interviews). He emphasized the need for researchers to fully grasp the philosophical underpinnings of the paradigms they were working within to ensure methodological rigor and integrity.</p>
-                </li>
-            </ul>
-        
-            <h3>Importance of Philosophy of Science in Research:</h3>
-            <ul class="styled-list">
-                <li>
-                    <p>Ponterotto argued that understanding the philosophy of science was crucial for conducting rigorous research. He explained that the philosophy of science provided the conceptual roots that underpinned all research methods and should have informed how researchers approached their work, including their selection of tools, methodologies, and participants. Without this understanding, researchers risked misapplying qualitative methods or falling back on a positivist framework, even when engaging in constructivist or critical-ideological research.</p>
-                </li>
-            </ul>
+        <div class="sections-sub">
+            <a href="#sec3">Model Fit</a>
         </div>
-        
-        <div class="content" id="content4">
-            <h2>Overview - </h2>
-            <p>Carla Willig’s chapter explored the epistemological foundations of qualitative research and emphasized the need for researchers to carefully consider the nature and status of knowledge in their research. The work highlighted different approaches to knowledge generation, offering a comprehensive framework for understanding how qualitative researchers approached the study of human experiences, social processes, and psychological phenomena.</p>
-            
-            <h3>Key Features of Qualitative Research</h3>
-            <ul class="styled-list">
-                <li><p><strong>Focus on Depth Over Breadth:</strong> Qualitative research prioritized depth of understanding, focusing on detailed exploration of participants’ experiences rather than aiming for generalizable findings. This method emphasized localized, context-specific insights over universal truths or broad generalizations.</p></li>
-                
-                <li><p><strong>Inductive Approach:</strong> Rather than starting with a hypothesis, qualitative research often followed an inductive model where understanding was built from the ground up, based on data collected. This allowed novel insights to emerge naturally from the research material. However, Willig acknowledged that pure induction was impossible since the researcher’s background invariably influenced the interpretation.</p></li>
-                
-                <li><p><strong>Researcher Reflexivity:</strong> Reflexivity was a key feature in qualitative research, as it involved the researcher’s critical reflection on how their own beliefs, assumptions, and personal experiences shaped their reading of the data. Researchers needed to acknowledge how their positionality may have impacted the analysis and findings.</p></li>
-                
-                <li><p><strong>Contextual Meaning:</strong> Meaning in qualitative research was always viewed within context. Researchers were primarily concerned with how participants made sense of their experiences within specific social and cultural contexts. There was a rejection of universal meanings, as meaning was considered highly situational.</p></li>
-                
-                <li><p><strong>Real-World Focus:</strong> Qualitative research typically engaged with participants’ real-world experiences. Data was often collected in natural settings or through interviews reflecting lived experiences, ensuring the research was grounded in actual events rather than hypothetical scenarios or artificial experiments.</p></li>
-            </ul>
-            
-            <h3>Differences Among Qualitative Approaches</h3>
-            <ul class="styled-list">
-                <li><p><strong>The Role of Theory:</strong> Some qualitative approaches were primarily inductive, seeking to generate new theories from data, such as grounded theory. Others, like psychoanalytic case studies, used existing theoretical frameworks to interpret data, applying external theories like Freudian or feminist analyses to give meaning to participants' accounts.</p></li>
-                
-                <li><p><strong>Descriptive vs. Interpretative:</strong> Approaches differed in whether they aimed for a straightforward description of participants’ experiences or whether they interpreted those experiences to uncover deeper, often hidden, meanings. For instance, descriptive phenomenology captured experiences as they were, while interpretative phenomenology sought to add meaning beyond what was immediately apparent.</p></li>
-                
-                <li><p><strong>Realism vs. Relativism:</strong> Realist approaches aimed to represent reality as it was, assuming a stable world that could be uncovered through research. Relativist approaches, often aligned with social constructionism, argued that reality was constructed through language and social interaction, focusing instead on how participants constructed meaning rather than whether those constructions were "true."</p></li>
-                
-                <li><p><strong>Politics:</strong> Some qualitative approaches, especially those influenced by feminist or critical theory, had an explicitly political dimension, aiming to give voice to marginalized groups and challenge power structures. These approaches often aligned with a relativist position but emphasized the role of qualitative research in promoting social change and empowerment.</p></li>
-            </ul>
-            
-            <h3>Three Types of Knowledge in Qualitative Research</h3>
-            <ul class="styled-list">
-                <li><p><strong>Realist Knowledge:</strong> Realist approaches to qualitative research aimed to uncover patterns and structures in the social or psychological world that existed independently of the researcher and participants. The researcher acted as a detective, trying to uncover hidden facts or processes through ethnography or grounded theory. Realist research assumed that there was an underlying reality that could be accessed through careful observation and analysis.</p></li>
-                
-                <li><p><strong>Phenomenological Knowledge:</strong> Phenomenological approaches focused on understanding participants’ lived experiences. Here, the goal was to explore how participants perceived and made sense of their world, without concern for external validation. This type of research did not question whether the participants' accounts were "accurate" but instead sought to understand the meaning of their subjective experiences. The researcher’s role was akin to that of a counselor, trying to "step into" the participant’s shoes.</p></li>
-                
-                <li><p><strong>Social Constructionist Knowledge:</strong> Social constructionist approaches questioned whether there was any objective reality and focused instead on how language constructed meaning. Researchers were interested in the discourses participants used and how these discourses shaped their reality. Knowledge, from this perspective, was not about discovering truths but about understanding how people created and maintained different versions of reality through language. The researcher’s role was more akin to that of an architect, analyzing how social and psychological realities were constructed.</p></li>
-            </ul>
-            
-            <h3>Varieties Within Each Approach</h3>
-            <ul class="styled-list">
-                <li><p><strong>Varieties of Realist Knowledge:</strong> Realist research could have ranged from naïve realism, which assumed a direct reflection of reality in the data, to critical realism, which acknowledged that underlying structures shaped observable phenomena but might not have been immediately visible. For example, psychoanalytic approaches often assumed that participants were unaware of the unconscious structures influencing their behavior, yet these structures were considered "real" within the framework of the research.</p></li>
-                
-                <li><p><strong>Varieties of Phenomenological Knowledge:</strong> Phenomenological knowledge could have been purely descriptive, aiming to capture the essence of an experience, or more interpretative, seeking to go beyond participants’ accounts to reveal deeper meanings. Interpretative phenomenology involved analyzing participants' experiences in the context of social and cultural structures, often using the researcher’s insights to bring new meaning to the data.</p></li>
-                
-                <li><p><strong>Varieties of Social Constructionist Knowledge:</strong> Social constructionist approaches varied from radical forms, which focused purely on how participants constructed meaning within specific conversations or contexts, to more moderate forms, which considered how broader sociocultural structures influenced discourse. Radical social constructionism denied the existence of any objective reality, while more moderate approaches acknowledged the impact of societal factors on individual meaning-making.</p></li>
-            </ul>
-            
-            <h3>Evaluation of Qualitative Research</h3>
-            <ul class="styled-list">
-                <li><p><strong>Epistemological Reflexivity:</strong> Willig argued that the evaluation of qualitative research must have been grounded in its epistemological stance. Different types of knowledge required different evaluation criteria. For instance, realist research could have been evaluated for objectivity and reliability, while social constructionist research focused on internal coherence and reflexivity. Researchers needed to clearly articulate their epistemological position for their work to be evaluated meaningfully.</p></li>
-                
-                <li><p><strong>Tailored Criteria:</strong> Criteria such as objectivity and triangulation were suitable for realist research, while internal coherence and deviant case analysis applied to social constructionist research. Reflexivity was important in all approaches but was used differently depending on the epistemological framework—whether to bracket researcher biases or to actively engage with how the researcher’s presence shaped the data.</p></li>
-            </ul>
-            
-            <h3>Conclusion</h3>
-            <p>Willig concluded by emphasizing that the three types of knowledge—realist, phenomenological, and social constructionist—should not have been seen as mutually exclusive but as complementary. Each approach provided access to different aspects of human experience. Researchers must have selected the appropriate epistemological framework based on their research question and what they aimed to uncover. The chapter encouraged a nuanced understanding of qualitative research, avoiding the oversimplified dichotomies between quantitative and qualitative paradigms, and recognizing the richness and diversity within qualitative methods.</p>
+        <div class="sections-sub">
+            <a href="#sec4">Properties and Assumptions</a>
         </div>
-        
+    </div>
+</div>
 
-        <div class="content" id="content5">
-            <h2>Some Questions posed by yours truly -</h2>
+<!-- Introduction -->
+<div class="intro">
+    <div class="headers">
+        <h1 class="name">Arjun Ghumman</h1>
+        <h1 class="title">Introduction to Simple Linear Regression</h1>
+    </div>
+</div>
 
-            <ul class="styled-list">
-              <li>
-                <i class="fas fa-users"></i>
-                <p>One of the main themes of the Polkinghorne paper was that natural language has a major role to play in qualitative research. But not everyone has the same ability to elucidate their "narratives" through language, so how much of qualitative research simply relies on the researcher extracting the true semantic content?</p>
-              </li>
-              <li>
-                <i class="fas fa-percentage"></i>
-                <p>The Josselson paper highlights the use of hermeneutics and narratives. But, given the issues with researcher accountability, lack of large scale samples, how can the results ever be trusted? </p>
-              </li>
-              <li>
-                <i class="fas fa-user-alt"></i>
-                <p>The universal language structure aims to decodes natural language, so why is it that qualitative researchers are so vehemently against using arbitary pre-defined categories? With modern methodology, these categories can be ever changing and dynamic.  </p>
-              </li>
-              <li>
-                <i class="fas fa-chart-line"></i>
-                <p>Not really a question, but a note. Ponterotto used the term "bricoleur", and I was curious about the etymology of the word. The word comes from the French word "bricoler," which originally referred to doing small, odd jobs or tinkering with various tools and materials. In academic fields, it refers to a more creative, resourceful approach to problem-solving and meaning-making.</p>
-              </li>
-              <li>
-                <i class="fas fa-comments"></i>
-                <p>Ponterotto's paper raised some key points in clinical research. That got me thinking about methodology agnostic variables, and the idea that there are certain things like subjectivity and biases that can't truly be quantified. But should they? If we simply examine the problem from a statistical perspective these biases would largely cancel each other out given a large enough sample size. How does Qualitative data handle method specific features in a way that can't be quantitatified and what is the overall value?</p>
-              </li>
-              <li>
-                <i class="fas fa-microphone-alt"></i>
-                <p>Quantitative paradigms are grounded in positivism and postpositivism, which assume that knowledge is objective, measurable, and generalizable. Constructivism, by contrast, belongs to the interpretive and relativist paradigms, where knowledge is seen as co-constructed and subjective. Measuring subjective realities in a consistent, objective manner would require assuming a shared reality, which contradicts the constructivist view. So my question is how do we generate generalized insights in qualitative research given the assumption from constructivism that there is no shared reality?</p>
-              </li>
-              <li>
-                <i class="fas fa-brain"></i>
-                <p>Ponterotto mentioned the "postpositivizing" of qualitative research. While I know that it means the Attribution error of relying on quantitative norms for qualitative research, how does a researcher avoid such perils?</p>
-              </li>
-              <li>
-                <i class="fas fa-chart-bar"></i>
-                <p>Qualitative research takes more of an inductive approach. Is this akin to exploratory analysis? What's stopping researchers from building large-scale LLMs that aim to generate insight in a more reproducible manner? What unique features to qualitative research offer? Because a more machine oriented solution would naturally remove theoretical reflexivity?</p>
-              </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <p>In Willig's paper, he mentioned that the three types of knowledge—realist, phenomenological, and social constructionist—should not be seen as mutually exclusive but as complementary despite the fact that they are based on fundamentally different epistemological assumptions?. What would be an example of this in research?</p>
-                </li>
+<!-- Section 1 -->
+<div class="section sec1">
+    <h2 id="sec1">Introduction to Regression</h2>
+    <p>Simple linear regression lives up to its name: it is a very straightforward approach for predicting a quantitative response Y on the basis of a single predictor variable X. It assumes that there is approximately a linear relationship between X and Y. But, one often wonders what does that mean?</p>
+    <p>It means that the mean of the response variable Y is a linear function of the predictor X (A straight line relationship where as X increases Y increases). Mathematically, we can write this linear relationship as:</p>
+    <p>\[Y = \beta_0 + \beta_1X + \varepsilon\]</p>
+    <p>
+        Where:
+    </p>
+    <ul>
+        <li>\(\beta_0\) (Intercept): The value of \(Y\) when \(X = 0\), representing the starting point of the regression line.</li>
+        <li>\(\beta_1\) (Slope): The average change in \(Y\) for a one-unit increase in \(X\), representing the steepness of the line.</li>
+        <li>\(\varepsilon\) (Error Term): The difference between the observed \(Y\) and the predicted \(Y\), capturing unexplained variability.</li>
+    </ul>
 
-           </ul>
-        </div>
-      </div>
+    <div class="image">
+        <img src="week2_1.png" alt="">
+    </div>
+
+    <div class="image">
+        <img src="animated_plot.gif" alt="">
+    </div>
+
+    <h3>Objective</h3>
+    <p>
+        The primary goal of simple linear regression is to estimate the coefficients \(\beta_0\) and \(\beta_1\) in order to minimize the error term \(\varepsilon\). 
+        This is achieved using the method of least squares, which minimizes the sum of squared residuals (\(\text{SSR}\)): <span class="red">Simply put - </span> we want to find the line that best fits the data.
+    </p>
+    <p>\[\text{SSR} = \sum_{i=1}^n (Y_i - (\beta_0 + \beta_1X_i))^2\]</p>
+    <p>
+        By minimizing \(\text{SSR}\), we find the values of \(\beta_0\) and \(\beta_1\) that best fit the data.
+    </p>
+    <table border="1" style="width:100%; text-align:left; border-collapse:collapse;">
+        <tr>
+            <th>Component</th>
+            <th>Description</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>\(Y_i\)</td>
+            <td>Actual observed value of \(Y\) for the \(i\)-th data point.</td>
+            <td>This is the "truth" or real-world data we are trying to predict.</td>
+        </tr>
+        <tr>
+            <td>\(\beta_0\)</td>
+            <td>The intercept of the regression line.</td>
+            <td>Starting value of \(Y\) when \(X = 0\).</td>
+        </tr>
+        <tr>
+            <td>\(\beta_1\)</td>
+            <td>The slope of the regression line.</td>
+            <td>Defines how much \(Y\) changes for a one-unit increase in \(X\).</td>
+        </tr>
+        <tr>
+            <td>\(X_i\)</td>
+            <td>The predictor or independent variable for the \(i\)-th data point.</td>
+            <td>Helps predict \(Y_i\) using the regression equation.</td>
+        </tr>
+        <tr>
+            <td>\(Y_i - (\beta_0 + \beta_1X_i)\)</td>
+            <td>The residual (difference) between the actual value and the predicted value.</td>
+            <td>Measures how far off the prediction is from the actual value.</td>
+        </tr>
+        <tr>
+            <td>\((Y_i - (\beta_0 + \beta_1X_i))^2\)</td>
+            <td>The squared residual for the \(i\)-th data point.</td>
+            <td>Ensures all errors are positive and emphasizes larger errors.</td>
+        </tr>
+        <tr>
+            <td>\(\sum_{i=1}^n\)</td>
+            <td>Summation over all data points.</td>
+            <td>Adds up all the squared residuals to get the total error.</td>
+        </tr>
+    </table>
+
+    <h3>Estimating Coefficients</h3>
+    <p>
+        The coefficients \(\beta_0\) and \(\beta_1\) are calculated using the following formulas:
+    </p>
+    <p>\[\beta_1 = \frac{\sum_{i=1}^n (X_i - \bar{X})(Y_i - \bar{Y})}{\sum_{i=1}^n (X_i - \bar{X})^2}\]</p>
+    <p>\[\beta_0 = \bar{Y} - \beta_1\bar{X}\]</p>
+    <p>
+        Where:
+    </p>
+    <ul>
+        <li>\(\bar{X}\) and \(\bar{Y}\) are the means of \(X\) and \(Y\), respectively.</li>
+        <li>\(\beta_1\) is the slope, determined by the covariance between \(X\) and \(Y\) divided by the variance of \(X\).</li>
+        <li>\(\beta_0\) is the intercept, centering the regression line based on the data.</li>
+    </ul>
+    <p> The formula for \(\beta_1\), the slope of the regression line, closely resembles the formula for Pearson's correlation coefficient (\(r\)). Specifically: </p>
+    <p>\[\beta_1 = \frac{\text{Cov}(X, Y)}{\text{Var}(X)} = \frac{\sum_{i=1}^n (X_i - \bar{X})(Y_i - \bar{Y})}{\sum_{i=1}^n (X_i - \bar{X})^2}\]</p>
+    <p> On the other hand, the formula for correlation (\(r\)) is given as: </p>
+    <p>\[r = \frac{\text{Cov}(X, Y)}{\sqrt{\text{Var}(X) \cdot \text{Var}(Y)}}\]</p>
+    <p> The key difference between the two lies in the denominator: </p>
+         <ul> 
+            <li>\(\beta_1\) scales the covariance by the variance of \(X\) alone, as it represents the change in \(Y\) for a one-unit change in \(X\).</li>
+            <li>\(r\), on the other hand, normalizes the covariance by the standard deviations of both \(X\) and \(Y\), making it a unitless measure of the strength and direction of the relationship between \(X\) and \(Y\).</li>
+         </ul> 
+    <p>In essence, <span class="red">Correlation is the standardized version of a slope.</span></p>
+    <h3>Residuals</h3>
+    <div class="image">
+        <img src="week2_2.png" alt="">
+    </div>
+    <p>
+        Residuals are the differences between the observed values of the response variable \(Y\) and the values predicted by the regression line. They are calculated as:
+    </p>
+    <p>\[e_i = Y_i - (\beta_0 + \beta_1X_i)\]</p>
+
+    <p>
+        Residuals are useful for assessing how well the model fits. A good model will have residuals that are randomly distributed around zero, indicating that the model captures the underlying relationship between the variables. 
+        On the other hand, patterns in the residuals (e.g., a curved relationship or heteroscedasticity) suggest that the model may not be appropriate for the data.
+    </p>
+</div>
       
+
+<!-- Section 2 -->
+
+<div class="section sec2">
+    <h2 id="sec2">Significance Testing and Measures of Uncertainty</h2>
+
+    <h3>Standard Errors</h3>
+    <p>
+        Standard errors measure the uncertainty in the estimated coefficients (\(\beta_0\) and \(\beta_1\)). These are calculated as:
+    </p>
+    <p>\[ SE(\beta_0) = \sqrt{\frac{\sigma^2}{n} + \frac{\bar{X}^2}{\sum_{i=1}^n (X_i - \bar{X})^2}} \]</p>
+    <p>\[ SE(\beta_1) = \sqrt{\frac{\sigma^2}{\sum_{i=1}^n (X_i - \bar{X})^2}} \]</p>
+    <p>Where:</p>
+    <ul>
+        <li>\(\sigma^2\) is the variance of the error term (\(\varepsilon\)), estimated using the residuals.</li>
+        <li>\(n\) is the sample size, representing the number of data points.</li>
+        <li>\(\bar{X}\) is the mean of the predictor variable \(X\).</li>
+        <li>\(X_i\) represents each individual value of \(X\).</li>
+    </ul>
+    <ul>
+        <li>Smaller standard errors indicate greater precision in the coefficient estimates.</li>
+        <li>Standard errors decrease as the sample size (\(n\)) increases.</li>
+    </ul>
+
+    <h3>Breaking It Down</h3>
+    <p>Here is how these formulas work in a simplified way:</p>
+    <ul>
+        <li>
+            To estimate \(\sigma^2\), we calculate the residual variance, which measures how far the actual values of \(Y\) are from the predicted values (\(\hat{Y}\)):
+            \[
+            \sigma^2 = \frac{\text{Residual Sum of Squares (RSS)}}{n - 2}
+            \]
+            Where:
+            <ul>
+                <li>\(\text{RSS} = \sum_{i=1}^n (Y_i - \hat{Y}_i)^2\)</li>
+                <li>\(n - 2\) accounts for the two parameters (\(\beta_0\) and \(\beta_1\)) estimated in the model.</li>
+            </ul>
+        </li>
+        <li>
+            Once \(\sigma^2\) is estimated, we plug it into the formulas for \(SE(\beta_0)\) and \(SE(\beta_1)\) to calculate the variability of the coefficients:
+            <ul>
+                <li>\(SE(\beta_1)\): Divides \(\sigma^2\) by the variance in \(X\). More spread in \(X\) gives us more "leverage" to estimate the slope precisely.</li>
+                <li>\(SE(\beta_0)\): Combines \(\sigma^2\) with an additional term accounting for the average value of \(X\), since the intercept depends on the position of \(X = 0\).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Hypothesis Testing</h3>
+    <p>
+        To test whether there is a relationship between \(X\) and \(Y\), we evaluate the null hypothesis (\(H_0\)) and alternative hypothesis (\(H_a\)):
+    </p>
+    <p>\[ H_0: \beta_1 = 0 \quad \text{vs.} \quad H_a: \beta_1 \neq 0 \]</p>
+    <ul>
+        <li>\(H_0\): No relationship exists between \(X\) and \(Y\).</li>
+        <li>\(H_a\): A relationship exists between \(X\) and \(Y\).</li>
+    </ul>
+    <p>
+        We calculate the <strong>t-statistic</strong> to determine if \(\beta_1\) is significantly different from 0:
+    </p>
+    <p>\[ t = \frac{\beta_1 - 0}{SE(\beta_1)} \]</p>
+    <p>
+        The t-statistic measures how many standard deviations \(\beta_1\) is away from 0. Using the t-distribution, we compute the <strong>p-value</strong>, which indicates the probability of observing such a result if \(H_0\) is true.
+    </p>
+    <p>
+        A small p-value (e.g., \(p < 0.05\)) suggests rejecting \(H_0\), supporting the conclusion that \(X\) and \(Y\) are related.
+    </p>
+
+    <h3>Confidence Intervals</h3>
+    <p>
+        Confidence intervals provide a range of plausible values for the true coefficient. For example, a 95% confidence interval for \(\beta_1\) is calculated as:
+    </p>
+    <p>\[ \beta_1 \pm 2 \cdot SE(\beta_1) \]</p>
+    <p>
+        This means that if we repeated the analysis many times, 95% of the intervals would contain the true value of \(\beta_1\).
+    </p>
+</div>
+
+
+<div class="section sec3">
+    <h2 id="sec3">Model Fit</h2>
+
+    <h3>Overview</h3>
+    <p>
+        To assess how well the model fits the data. This is typically done using two related metrics:
+    </p>
+    <ul>
+        <li><strong>Residual Standard Error (RSE)</strong></li>
+        <li><strong>\(R^2\) Statistic</strong></li>
+    </ul>
+    <p>
+        These metrics provide insight into the accuracy of the model and the proportion of variability in the response variable that is explained by the predictor.
+    </p>
+
+    <h3>Residual Standard Error (RSE)</h3>
+    <p>
+        The RSE measures the average distance between the observed data points and the regression line. It is calculated as:
+    </p>
+    <p>\[\text{RSE} = \sqrt{\frac{\sum_{i=1}^n (Y_i - \hat{Y}_i)^2}{n-2}}\]</p>
+    <ul>
+        <li><strong>\(Y_i\):</strong> The actual observed value of \(Y\).</li>
+        <li><strong>\(\hat{Y}_i\):</strong> The predicted value of \(Y\) from the regression model.</li>
+        <li><strong>\(n\):</strong> The total number of data points.</li>
+    </ul>
+    <p>
+        <span class="red">RSE</span> simply tells us how far, on average, the actual data points are from the predicted values. A smaller RSE means the model fits the data better.
+    </p>
+
+    <h3>\(R^2\) Statistic</h3>
+    <p>
+        The \(R^2\) statistic measures the proportion of variability in the response variable \(Y\) that is explained by the predictor \(X\). It is calculated as:
+    </p>
+    <p>\[R^2 = 1 - \frac{\text{RSS}}{\text{TSS}}\]</p>
+    <ul>
+        <li><strong>\(\text{RSS}\):</strong> Residual Sum of Squares, the variability left unexplained by the model.</li>
+        <li><strong>\(\text{TSS}\):</strong> Total Sum of Squares, the total variability in \(Y\).</li>
+    </ul>
+    <p>
+        \(R^2\) ranges between 0 and 1:
+        <ul>
+            <li>A value close to 1 means the model explains most of the variability in \(Y\).</li>
+            <li>A value close to 0 means the model explains little of the variability in \(Y\).</li>
+        </ul>
+    </p>
+    <p>
+        <span class="red">\(R^2\)</span> shows how much of the "story" about \(Y\) is explained by \(X\). The closer \(R^2\) is to 1, the better the fit.
+    </p>
+
+    <h3>Comparison</h3>
+    <p>
+        <strong>Residual Standard Error:</strong> Provides an absolute measure of the model's fit, in the units of \(Y\). This can be thought of as a measure of lack of fit, then a measure of fit.
+    </p>
+    <p>
+        <strong>\(R^2\):</strong> Provides a relative measure of fit, showing the proportion of explained variance, independent of the units of \(Y\).
+    </p>
+
+    <h3>Example</h3>
+    <p>
+        Let's say for an example we are trying to predict the sales of TV sets based on the advertising budget:
+    </p>
+    <table border="1" style="width:100%; text-align:left; border-collapse:collapse;">
+        <tr>
+            <th>Metric</th>
+            <th>Value</th>
+            <th>Interpretation</th>
+        </tr>
+        <tr>
+            <td>Residual Standard Error</td>
+            <td>3.26</td>
+            <td>This value would suggest that average deviation of actual sales from the predicted sales is about 3,260 units.</td>
+        </tr>
+        <tr>
+            <td>\(R^2\) Statistic</td>
+            <td>0.612</td>
+            <td>About 61% of the variability in sales is explained by TV advertising.</td>
+        </tr>
+    </table>
+    <h3>Simplifying R Squared - </h3>
+    <p>
+        The \(R^2\) statistic is a measure that tells us <strong>how much of the changes or variability in the response variable (\(Y\)) can be explained by the predictor variable (\(X\))</strong> using the regression model.
+    </p>
+
+    <h3>Breaking it Down:</h3>
+    <ul>
+        <li>
+            <strong>What does "variability in \(Y\)" mean?</strong>
+            <ul>
+                <li>Variability in \(Y\) refers to how much the values of \(Y\) differ from each other. For example, if you have a dataset of student test scores, some scores will be high, and some will be low. The variability is the range and spread of these scores.</li>
+                <li>If there is no variability in \(Y\), all the values would be the same (e.g., every student scored exactly 70). But in real-world data, variability always exists.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>What does \(R^2\) measure?</strong>
+            <ul>
+                <li>\(R^2\) tells us how much of that variability in \(Y\) can be linked to or predicted by changes in \(X\). For example:
+                    <ul>
+                        <li>If \(R^2 = 0.75\), it means 75% of the variability in \(Y\) is explained by \(X\), and the remaining 25% is due to other factors not included in the model or random noise.</li>
+                        <li>If \(R^2 = 0.25\), only 25% of the variability in \(Y\) is explained by \(X\), and 75% is unexplained.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>How is \(R^2\) calculated?</strong>
+            <ul>
+                <li>It's based on the <em>proportion of total variability</em> that the regression model accounts for. Mathematically:
+                    <div class="equation">
+                        \[ R^2 = 1 - \frac{\text{Unexplained Variability (RSS)}}{\text{Total Variability (TSS)}} \]
+                    </div>
+                </li>
+                <li><strong>RSS</strong> (Residual Sum of Squares): How much of \(Y\)'s variability is left unexplained by the model.</li>
+                <li><strong>TSS</strong> (Total Sum of Squares): The total variability in \(Y\).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Why does \(R^2\) matter?</strong>
+            <ul>
+                <li><strong>High \(R^2\):</strong> The model does a good job explaining or predicting \(Y\). For example, if \(R^2 = 0.9\), it means most of \(Y\)'s variability is captured by the regression model.</li>
+                <li><strong>Low \(R^2\):</strong> The model doesn’t explain much about \(Y\), meaning other factors or a different model might be needed.</li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+<div class="section sec4">
+    <h2 id="sec4">Properties and Assumptions</h2>
+    <h3>General Properties of a Linear Model</h3>
+    <p>
+        A linear regression model relies on several key assumptions and properties to ensure its validity. Below is a table summarizing these properties and what they mean:
+    </p>
+
+    <table border="1" style="width:100%; text-align:left; border-collapse:collapse;">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>What It Means</th>
+        </tr>
+        <tr>
+            <td>Linearity</td>
+            <td>The relationship between the predictor (\(X\)) and response (\(Y\)) is linear.</td>
+            <td>For every unit increase in \(X\), there is a constant change in \(Y\). The data should follow a straight-line trend when plotted.</td>
+        </tr>
+        <tr>
+            <td>Monotonicity</td>
+            <td>The relationship between \(X\) and \(Y\) is either consistently increasing or decreasing.</td>
+            <td>There should be no reversals in the trend (e.g., \(Y\) does not first increase and then decrease as \(X\) increases).</td>
+        </tr>
+        <tr>
+            <td>Homoscedasticity</td>
+            <td>The variance of the residuals (errors) is constant across all levels of \(X\).</td>
+            <td>The spread of the residuals should remain the same, rather than increasing or decreasing as \(X\) changes.</td>
+        </tr>
+        <tr>
+            <td>Independence</td>
+            <td>Observations are independent of each other.</td>
+            <td>Errors for one data point should not be related to errors for another.</td>
+        </tr>
+        <tr>
+            <td>Normality</td>
+            <td>The residuals (errors) are normally distributed.</td>
+            <td>When plotted, the errors should form a bell-shaped curve, ensuring valid hypothesis testing and confidence intervals.</td>
+        </tr>
+        <tr>
+            <td>No Multicollinearity</td>
+            <td>The predictor variables (in multiple regression) are not highly correlated with each other.</td>
+            <td>High correlation between predictors can distort the estimates of the coefficients and reduce the reliability of the model.</td>
+        </tr>
+        <tr>
+            <td>Exogeneity</td>
+            <td>The predictor variable (\(X\)) is uncorrelated with the error term (\(\varepsilon\)).</td>
+            <td>\(X\) should not contain measurement errors or be influenced by omitted variables that affect \(Y\).</td>
+        </tr>
+    </table>
+
+    <h3>Understanding the Problem - </h3>
+    <div class="image">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*WjgaFV1WGPbw3-fR-2CB0A.png" alt="">
+    </div>
+    <h3>Bias</h3>
+    <p>
+        Bias refers to the error introduced when the model makes simplifying assumptions about the real-world relationship between \(X\) and \(Y\). In linear regression, bias occurs when the true relationship is different, from what the model assumes. For example, if the true relationship is non-linear, but the model assumes a linear relationship, bias will be introduced.
+    </p>
+    <p>
+        Mathematically, bias is defined as:
+    </p>
+    <p>\[ \text{Bias}(\hat{f}) = \mathbb{E}[\hat{f}(X)] - f(X) \]</p>
+    <p>
+        Where:
+    </p>
+    <ul>
+        <li>\(\mathbb{E}[\hat{f}(X)]\): The expected prediction from the model over different datasets.</li>
+        <li>\(f(X)\): The true underlying function.</li>
+    </ul>
+    <p>
+        A high bias model will systematically underfit the data, failing to capture the true relationship between \(X\) and \(Y\).
+    </p>
+    
+    <h3>Variance</h3>
+    <p>
+        Variance measures the model's sensitivity to fluctuations. High variance models capture noise as if it were a true signal. Simply put, variance is the variability in model predictions across different datasets. 
+    </p>
+    <p>
+        Mathematically, variance is defined as:
+    </p>
+    <p>\[ \text{Variance}(\hat{f}) = \mathbb{E}[(\hat{f}(X) - \mathbb{E}[\hat{f}(X)])^2] \]</p>
+    <p>
+        Where:
+    </p>
+    <ul>
+        <li>\(\hat{f}(X)\): The model's prediction for a specific dataset.</li>
+        <li>\(\mathbb{E}[\hat{f}(X)]\): The expected prediction from the model over all datasets.</li>
+    </ul>
+    <p>
+        High variance models perform well on one data but poorly on new, unseen data. For example, a study on the relationship of IQ and gender for psychology students may not generalize to a broader population.
+    </p>
+
+    <h3>Impact of Assumption Violations</h3>
+
+    <div class="image">
+        <img src="https://www.jmp.com/en_sg/statistics-knowledge-portal/what-is-regression/simple-linear-regression-assumptions/_jcr_content/par/styledcontainer_2069/par/lightbox_e99c/lightboxImage.img.png/1548351203100.png" alt="">
+    </div>
+
+    <div class="image">
+        <img src="week2_4.png" alt="">
+    </div>
+
+    <div class="image">
+        <img src="week2_5.png" alt="">
+    </div>
+
+    <table border="1" style="width:100%; text-align:left; border-collapse:collapse;">
+        <tr>
+            <th>Assumption</th>
+            <th>Violation</th>
+            <th>Impact on Estimates</th>
+            <th>Impact on Accuracy (Standard Errors & p-values)</th>
+        </tr>
+        <tr>
+            <td>Linearity</td>
+            <td>Non-linear relationship between predictors and response.</td>
+            <td>Estimates are biased because the true relationship is not captured.</td>
+            <td>Standard errors are underestimated, leading to misleadingly small p-values.</td>
+        </tr>
+        <tr>
+            <td>Homoscedasticity</td>
+            <td>Non-constant variance of residuals.</td>
+            <td>Estimates remain unbiased.</td>
+            <td>Standard errors are incorrect, leading to invalid confidence intervals and hypothesis tests.</td>
+        </tr>
+        <tr>
+            <td>Independence</td>
+            <td>Residuals are correlated (e.g., time-series data).</td>
+            <td>Estimates may be biased due to residual dependencies.</td>
+            <td>Standard errors are underestimated, inflating Type I error rates (false positives).</td>
+        </tr>
+        <tr>
+            <td>Normality</td>
+            <td>Residuals are not normally distributed.</td>
+            <td>Estimates remain unbiased.</td>
+            <td>p-values and confidence intervals become unreliable for small sample sizes.</td>
+        </tr>
+        <tr>
+            <td>No Multicollinearity</td>
+            <td>Predictors are highly correlated.</td>
+            <td>Estimates are unstable and unreliable.</td>
+            <td>Standard errors inflate, leading to large p-values and reduced statistical power.</td>
+        </tr>
+        <tr>
+            <td>Exogeneity</td>
+            <td>Predictors are correlated with the error term.</td>
+            <td>Severe bias in estimates due to omitted variable bias.</td>
+            <td>Standard errors and p-values are invalid, making inference impossible.</td>
+        </tr>
+        <tr>
+            <td>Outliers</td>
+            <td>Extreme values in predictors or response.</td>
+            <td>Estimates are heavily influenced and may not represent the majority of the data.</td>
+            <td>Standard errors increase, leading to unstable p-values and reduced reliability of results.</td>
+        </tr>
+    </table>
+</div>
+
+
 </body>
 </html>
